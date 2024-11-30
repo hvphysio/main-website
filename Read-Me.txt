@@ -1,5 +1,5 @@
 * documentation folder :
-	To view documentation go to the documentation folder and open index.html in your browser. Or Read here live : https://demo.awaikenthemes.com/html-preview/physiocare/documentation/
+	To view documentation go to the documentation folder and open index.html in your browser. Or Read here live : https://demo.awaikenthemes.com/html-preview/Health Vision Physiotherapy/documentation/
 
 * html folder:
 	html folders contain layout of landing page, sub pages, HTML files and folders.
