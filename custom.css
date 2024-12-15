@@ -128,7 +128,7 @@ body{
     padding-left: 15px;
 }
 
-.2147, E end C Main Rd, Jayanagar 9th block{
+/* .2147, E end C Main Rd, Jayanagar 9th block{
 	position: relative;
 	overflow: hidden;
 	.img{
@@ -154,7 +154,7 @@ body{
     height: 250%;
     transition: all 600ms linear;
     background-color: transparent;
-}
+} */
 
 .reveal{
 	position: relative;
@@ -616,6 +616,10 @@ header.main-header .header-sticky.active{
 	color: var(--primary-color);
 	background-color: transparent;
 	padding: 8px 20px 8px 23px !important;
+}
+
+.header-btn-1 .whatsapp-btn{
+    width: 53px;
 }
 
 .header-btn .btn-default::before{

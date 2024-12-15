@@ -130,6 +130,8 @@ body {
 
 .gallery-image {
   .image-anime {
+    text-align: center;
+    font-weight: 700;
     img {
       width: 316px;
       height: 365px;
@@ -430,6 +432,23 @@ body {
 /************************************/
 /**** 	   03. Header css		 ****/
 /************************************/
+
+.header-btn-1{
+  background-color: var(--accent-color);
+  border-radius: 50px;
+  margin-left: 15px;
+}
+
+.whatsapp-btn{
+  width: 53px;
+  height: 53px;
+}
+
+.whatsapp-btn .fa-whatsapp{
+  padding: 6px 9px;
+  font-size: 40px;
+  color: #fff;
+}
 
 .topbar {
   padding: 12px 0;
