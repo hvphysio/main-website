@@ -263,6 +263,11 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
+        <div class="appointment-form">
+            <div class="hero-appointment-form-title">
+                <h2 class="text-anime-style-2"><span>Book</span> Appointment</h2>
+                <p class="wow fadeInUp">Easily schedule your appointment by a Filling out our simple form</p>
+            </div>
         <form id="appointmentForm">
 
             <div class="row">
@@ -270,18 +275,31 @@
                     <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" required>
                     <div class="help-block with-errors"></div>
                 </div>
-
-                <div class="form-group col-md-6 mb-4">
-                    <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Email" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-
                 <div class="form-group col-md-6 mb-4">
                     <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
                     <div class="help-block with-errors"></div>
                 </div>
+                <div class="form-group col-md-6 mb-4">
+                    <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Email (optional)">
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group col-md-12 mb-4">
+                    <textarea type="text" name="condition" class="form-control" id="condition" placeholder="Enter Your Condition e.g Back Pain , Neck Pain" required></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <label for="date">Date of Appointment</label>
+                    <input type="date" name ="date" class="form-control" id="date" placeholder="Date Of Appointment" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group col-md-6 mb-4">
+                    <label for="date">Time of Appointment</label>
+                    <input type="time" name ="time" class="form-control" id="time" placeholder="Time Of Appointment" required>
+                    <div class="help-block with-errors"></div>
+                </div>
             </div>       
-          <label for="name">Name:</label><br />
+          <!-- <label for="name">Name:</label><br />
           <input
             type="text"
             id="name"
@@ -307,25 +325,26 @@
             placeholder="e.g., Fever, Back Pain"
             required
           /><br /><br />
-
-          <label for="date">Date of Appointment:</label><br />
+ -->
+          <!-- <label for="date">Date of Appointment:</label><br />
           <input
             type="date"
             id="date"
             name="date"
             required
-          /><br /><br />
+          /><br /><br /> -->
 
-          <label for="time">Time of Appointment:</label><br />
+          <!-- <label for="time">Time of Appointment:</label><br />
           <input
             type="time"
             id="time"
             name="time"
             required
-          /><br /><br />
+          /><br /><br /> -->
 
-          <button type="submit">Send via WhatsApp</button>
+          <button type="submit" class="btn-default">Send via WhatsApp</button>
         </form>
+        </div>
       </div>
     </div>
     <!-- Hero Section Start -->
@@ -382,6 +401,7 @@
                           >
                           <a
                             href="#"
+                            id="myBtn2"
                             class="btn-default btn-highlighted"
                             >book appointment</a
                           >
@@ -446,6 +466,7 @@
                           >
                           <a
                             href="#"
+                            id="myBtn"
                             class="btn-default btn-highlighted"
                             >book appointment</a
                           >
@@ -706,6 +727,7 @@
                   <a
                     href="#"
                     class="btn-default"
+                    id="myBtn4"
                     >Make an appointment</a
                   >
                 </div>
@@ -1212,6 +1234,7 @@
               <div class="service-cta-btn">
                 <a
                   href="#"
+                  id="myBtn3"
                   class="btn-default"
                   >Book Appointment</a
                 >
@@ -2546,12 +2569,26 @@
 
       // Get the button that opens the modal
       var btn = document.getElementById("myBtn");
+      var btn2 = document.getElementById("myBtn2");
+      var btn3 = document.getElementById("myBtn3");
+      var btn4 = document.getElementById("myBtn4");
+
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 
       // When the user clicks on the button, open the modal
       btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      btn2.onclick = function () {
+        modal.style.display = "block";
+      };
+      btn3.onclick = function () {
+        modal.style.display = "block";
+      };
+      btn4.onclick = function () {
         modal.style.display = "block";
       };
 

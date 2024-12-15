@@ -111,7 +111,61 @@
 		</div>
 	</header>
 	<!-- Header End -->
+    <a
+    href="https://wa.me/917006304372?text=I'm%20interested%20in%20your%20physiotherapy%20services."
+    class="float-whatsapp"
+  >
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
 
+  <div
+    id="myModal"
+    class="modal"
+  >
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="appointment-form">
+          <div class="hero-appointment-form-title">
+              <h2 class="text-anime-style-2"><span>Book</span> Appointment</h2>
+              <p class="wow fadeInUp">Easily schedule your appointment by a Filling out our simple form</p>
+          </div>
+      <form id="appointmentForm">
+
+          <div class="row">
+              <div class="form-group col-md-12 mb-4">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" required>
+                  <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-md-6 mb-4">
+                  <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
+                  <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-md-6 mb-4">
+                  <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Email (optional)">
+                  <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-md-12 mb-4">
+                  <textarea type="text" name="condition" class="form-control" id="condition" placeholder="Enter Your Condition e.g Back Pain , Neck Pain" required></textarea>
+                  <div class="help-block with-errors"></div>
+              </div>
+
+              <div class="form-group col-md-6 mb-4">
+                  <label for="date">Date of Appointment</label>
+                  <input type="date" name ="date" class="form-control" id="date" placeholder="Date Of Appointment" required>
+                  <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-md-6 mb-4">
+                  <label for="date">Time of Appointment</label>
+                  <input type="time" name ="time" class="form-control" id="time" placeholder="Time Of Appointment" required>
+                  <div class="help-block with-errors"></div>
+              </div>
+          </div>       
+        <button type="submit" class="btn-default">Send via WhatsApp</button>
+      </form>
+      </div>
+    </div>
+  </div>
     <!-- Page Header Start -->
 	<div class="page-header">
 		<div class="container">
@@ -368,7 +422,7 @@
                     <div class="col-lg-6">
                         <!-- Cta Appointment Button Start -->
                         <div class="cta-appointment-btn">
-                            <a href="" class="btn-default">book appointment</a>
+                            <a href="" id="myBtn" class="btn-default">book appointment</a>
                         </div>
                         <!-- Cta Appointment Button End -->
                     </div>
@@ -821,7 +875,85 @@
         </div>
      </footer>
     <!-- Footer End -->
-    
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+  
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
+        var btn4 = document.getElementById("myBtn4");
+  
+  
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+  
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+          modal.style.display = "block";
+        };
+  
+        btn2.onclick = function () {
+          modal.style.display = "block";
+        };
+        btn3.onclick = function () {
+          modal.style.display = "block";
+        };
+        btn4.onclick = function () {
+          modal.style.display = "block";
+        };
+  
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+  
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+      </script>
+      <script>
+          function convertTime() {
+              // Get the time input value
+              const time24 = document.getElementById('time').value.trim();
+  
+              // Split the time into hours and minutes
+              let [hours, minutes] = time24.split(':').map(Number);
+  
+              // Determine AM or PM
+              const period = hours >= 12 ? 'PM' : 'AM';
+  
+              // Convert hours to 12-hour format
+              hours = hours % 12 || 12; // Use modulus for 12-hour format, replace 0 with 12
+  
+              // Format the result
+              const time12 = `${hours}:${minutes.toString().padStart(2, '0')} ${period}`;
+              
+              // Display the result
+              return time12;
+          }
+          document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+              event.preventDefault(); // Prevent form submission
+  
+              const name = document.getElementById("name").value.trim();
+              const phone = document.getElementById("phone").value.trim();
+              const condition = document.getElementById("condition").value.trim();
+              const date = document.getElementById("date").value.trim();
+              const time = convertTime();
+  
+              if (name && phone && condition && date && time) {
+                  const message = `Hello, my name is ${name}. I would like to book an appointment for the following details:\n\nCondition: ${condition}\nDate: ${date}\nTime: ${time}\n\nPlease confirm the appointment, here my contact: ${phone}.`;
+                  const whatsappURL = `https://wa.me/917006304372?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappURL, '_blank');
+              } else {
+                  alert("Please fill in all the fields.");
+              }
+          });
+      </script>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->
