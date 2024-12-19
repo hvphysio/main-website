@@ -2706,72 +2706,7 @@
       }
     </script>
 
-    <script>
-      const testimonials = [
-        {
-          rating: 5,
-          content: "We understand that injuries and acute pain can happen unexpectedly. Our emergency physiotherapy services are designed to provide prompt.",
-          image: "images/author-1.jpg",
-          name: "Johan Duo",
-          profession: "Professional Athlete"
-        },
-        {
-          rating: 4,
-          content: "Exceptional care and attention during recovery. I’m grateful for the quick relief and guidance provided.",
-          image: "images/author-2.jpg",
-          name: "Anna Bell",
-          profession: "Yoga Instructor"
-        },
-        {
-          rating: 5,
-          content: "The physiotherapy sessions helped me get back to my sport faster. Highly recommend their services for anyone in pain.",
-          image: "images/author-3.jpg",
-          name: "Michael Reese",
-          profession: "Amateur Runner"
-        },
-        {
-          rating: 5,
-          content: "We understand that injuries and acute pain can happen unexpectedly. Our emergency physiotherapy services are designed to provide prompt.",
-          image: "images/author-1.jpg",
-          name: "Johan Duo",
-          profession: "Professional Athlete"
-        },
-        {
-          rating: 4,
-          content: "Exceptional care and attention during recovery. I’m grateful for the quick relief and guidance provided.",
-          image: "images/author-2.jpg",
-          name: "Anna Bell",
-          profession: "Yoga Instructor"
-        },
-        {
-          rating: 5,
-          content: "The physiotherapy sessions helped me get back to my sport faster. Highly recommend their services for anyone in pain.",
-          image: "images/author-3.jpg",
-          name: "Michael Reese",
-          profession: "Amateur Runner"
-        },
-        {
-          rating: 5,
-          content: "We understand that injuries and acute pain can happen unexpectedly. Our emergency physiotherapy services are designed to provide prompt.",
-          image: "images/author-1.jpg",
-          name: "Johan Duo",
-          profession: "Professional Athlete"
-        },
-        {
-          rating: 4,
-          content: "Exceptional care and attention during recovery. I’m grateful for the quick relief and guidance provided.",
-          image: "images/author-2.jpg",
-          name: "Anna Bell",
-          profession: "Yoga Instructor"
-        },
-        {
-          rating: 5,
-          content: "The physiotherapy sessions helped me get back to my sport faster. Highly recommend their services for anyone in pain.",
-          image: "images/author-3.jpg",
-          name: "Michael Reese",
-          profession: "Amateur Runner"
-        }
-      ];
+    <script defer>
       function truncateTextByChar(text, charLimit) {
         if (text.length <= charLimit) {
           return { text: text, isTruncated: false };
@@ -2797,311 +2732,23 @@
         };
       }
       try {
-       fetch("https://api.hvphysiotherapy.com/reviews")
-       .then(response => response.json())
-       .then(res => {
-        console.log("res---- reviees", res)
-       })
-      } catch (error) {
-          console.log("Error ---", error);
-      }
-      //  .then(response => response.json())
-      //  .then(res => {
-      // const reviews = res?.data;
+        fetch("https://api.hvphysiotherapy.com/reviews")
+          .then((response) => response.json())
+          .then((res) => {
+            console.log("res---- reviees", res);
 
-      const reviews = [
-        {
-          link: "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYbmNleEJ3EAE!2m1!1s0x0:0x49903c71f364f39c!3m1!1s2@1:CIHM0ogKEICAgIDXncexBw%7CCgsI8uuEuwYQ0PTBag%7C?hl=en-US",
-          rating: 5,
-          date: "2 days ago",
-          iso_date: "2024-10-30T08:45:04Z",
-          iso_date_of_last_edit: "2024-12-17T08:27:30Z",
-          images: ["https://lh5.googleusercontent.com/p/AF1QipMkRrJXh-BcW5_SRjwRVqBkxxVqhguxJsITmsE9=w150-h150-k-no-p"],
-          source: "Google",
-          review_id: "ChZDSUhNMG9nS0VJQ0FnSURYbmNleEJ3EAE",
-          user: {
-            name: "Habeebur Rahman",
-            link: "https://www.google.com/maps/contrib/109059176032329993290?hl=en-US",
-            contributor_id: "109059176032329993290",
-            thumbnail: "https://lh3.googleusercontent.com/a/ACg8ocIMAOGxEWtNmWfNaBZnYG2n38HrpWdLLHhiuXsE8hUIRQ0Gpg=s120-c-rp-mo-br100",
-            local_guide: true,
-            reviews: 3,
-            photos: 1
-          },
-          snippet:
-            "I was struggling with neck pain and back pain from months. I was searching for physiotherapy near me, I came to know about Health Vision . Here Dr. Zahoor MIR examined me and planned a treatment. I got treated here for 7 days with advanced physiotherapy like DIASTM and many other treatments. My pain was over in 7 days only. Then I came to know about personalized fitness program offered by Health Vision. Now I'm the part of the program and improving the quality of life.",
-          extracted_snippet: {
-            original:
-              "I was struggling with neck pain and back pain from months. I was searching for physiotherapy near me, I came to know about Health Vision . Here Dr. Zahoor MIR examined me and planned a treatment. I got treated here for 7 days with advanced physiotherapy like DIASTM and many other treatments. My pain was over in 7 days only. Then I came to know about personalized fitness program offered by Health Vision. Now I'm the part of the program and improving the quality of life."
-          },
-          likes: 1,
-          response: {
-            date: "a month ago",
-            iso_date: "2024-10-30T08:48:33Z",
-            iso_date_of_last_edit: "2024-10-30T08:48:33Z",
-            snippet:
-              "Thank you for choosing best Physiotherapy with best Physiotherapist in bangalore. We are ranking top in the bangalore because of number of patient wellness history. We are glad to hear that your pain was releaved by the founder of Health Vision Physiotherapy and Rehabilitation. ",
-            extracted_snippet: {
-              original:
-                "Thank you for choosing best Physiotherapy with best Physiotherapist in bangalore. We are ranking top in the bangalore because of number of patient wellness history. We are glad to hear that your pain was releaved by the founder of Health Vision Physiotherapy and Rehabilitation. "
-            }
-          }
-        },
-        {
-          link: "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIbGJYNnR3RRAB!2m1!1s0x0:0x49903c71f364f39c!3m1!1s2@1:CIHM0ogKEICAgICHlbX6twE%7CCgsIwdLvtgYQyN6pAQ%7C?hl=en-US",
-          rating: 5,
-          date: "3 months ago",
-          iso_date: "2024-09-07T05:48:49Z",
-          iso_date_of_last_edit: "2024-09-07T05:48:49Z",
-          images: ["https://lh5.googleusercontent.com/p/AF1QipMmyv4TzblUI1SDII4Da4zn6jc22dLYcVff2oWm=w150-h150-k-no-p"],
-          source: "Google",
-          review_id: "ChdDSUhNMG9nS0VJQ0FnSUNIbGJYNnR3RRAB",
-          user: {
-            name: "H Anoori",
-            link: "https://www.google.com/maps/contrib/100559354033891731810?hl=en-US",
-            contributor_id: "100559354033891731810",
-            thumbnail: "https://lh3.googleusercontent.com/a-/ALV-UjVb_ZtNVwLtpbHOg6495_m0KlbTvJxjPoJNl0bEtgVefmo8vB0U=s120-c-rp-mo-br100",
-            local_guide: true,
-            reviews: 1,
-            photos: 3
-          },
-          snippet:
-            "got treatment for Sciatica pain in health Vision. Dr. zahoor Mir treated me for sciatica. earlier i took number of physiotherapy sessions in different centres, but it was useless. later i came to know about advanced physiotherapy at Health vision Physiotherapy & rehabilitation, i gave a chance to treat for few days. within 5 days of advanced treatment, my pain was 90% reduced. I am literally surprised about the advanced treatment done. the staff is very professional, cooperative and a clean and calm place to get advanced physiotherapy at affordable prizes.",
-          extracted_snippet: {
-            original:
-              "got treatment for Sciatica pain in health Vision. Dr. zahoor Mir treated me for sciatica. earlier i took number of physiotherapy sessions in different centres, but it was useless. later i came to know about advanced physiotherapy at Health vision Physiotherapy & rehabilitation, i gave a chance to treat for few days. within 5 days of advanced treatment, my pain was 90% reduced. I am literally surprised about the advanced treatment done. the staff is very professional, cooperative and a clean and calm place to get advanced physiotherapy at affordable prizes."
-          },
-          likes: 4,
-          response: {
-            date: "3 months ago",
-            iso_date: "2024-09-07T16:28:23Z",
-            iso_date_of_last_edit: "2024-09-07T16:28:23Z",
-            snippet: "Thank you for choosing the health Vision physiotherapy and rehabilitation where you can get best treatment for sciatica. ",
-            extracted_snippet: {
-              original: "Thank you for choosing the health Vision physiotherapy and rehabilitation where you can get best treatment for sciatica. "
-            }
-          }
-        },
-        {
-          link: "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3czVUMFZREAE!2m1!1s0x0:0x49903c71f364f39c!3m1!1s2@1:CIHM0ogKEICAgID7s5T0VQ%7CCgwIobO7tgYQiPi_3AE%7C?hl=en-US",
-          rating: 5,
-          date: "3 months ago",
-          iso_date: "2024-08-28T08:02:41Z",
-          iso_date_of_last_edit: "2024-08-28T08:02:41Z",
-          images: ["https://lh5.googleusercontent.com/p/AF1QipPS0n5FiVgYoBKcHrZjpsOaIAs6y_I9xDZw7vB7=w150-h150-k-no-p"],
-          source: "Google",
-          review_id: "ChZDSUhNMG9nS0VJQ0FnSUQ3czVUMFZREAE",
-          user: {
-            name: "Rasel Babu",
-            link: "https://www.google.com/maps/contrib/117208887431738844616?hl=en-US",
-            contributor_id: "117208887431738844616",
-            thumbnail: "https://lh3.googleusercontent.com/a/ACg8ocIxqb5G4pQsrZkONlaWwg3g396zSizyM2R_CcqyJeY4BZTidQ=s120-c-rp-mo-br100",
-            reviews: 1,
-            photos: 1
-          },
-          snippet:
-            "Best home physiotherapy services in Bangalore. My grand father, who was suffering from arthritis is now fine because of\nadvanced home physiotherapy services provided by Health Vision Physiotherapy and Rehabilitation. My grand father is now walking, going to washroom and doing all his activities at his own.",
-          extracted_snippet: {
-            original:
-              "Best home physiotherapy services in Bangalore. My grand father, who was suffering from arthritis is now fine because of\nadvanced home physiotherapy services provided by Health Vision Physiotherapy and Rehabilitation. My grand father is now walking, going to washroom and doing all his activities at his own."
-          },
-          likes: 2,
-          response: {
-            date: "3 months ago",
-            iso_date: "2024-09-07T16:31:05Z",
-            iso_date_of_last_edit: "2024-09-07T16:31:05Z",
-            snippet:
-              "Thank you for choosing Health Vision Physiotherapy and rehabilitation centre, a centre of advanced physiotherapy in Bangalore. We are happy that our expert physiotherapists have treated your grandfather for arthritis of knee. We have history of providing best treatment for arthritis in Bangalore. ",
-            extracted_snippet: {
-              original:
-                "Thank you for choosing Health Vision Physiotherapy and rehabilitation centre, a centre of advanced physiotherapy in Bangalore. We are happy that our expert physiotherapists have treated your grandfather for arthritis of knee. We have history of providing best treatment for arthritis in Bangalore. "
-            }
-          }
-        },
-        {
-          link: "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNQdzh2V19nRRAB!2m1!1s0x0:0x49903c71f364f39c!3m1!1s2@1:CIHM0ogKEICAgICPw8vW_gE%7CCgwIyrKcugYQqPHSxgM%7C?hl=en-US",
-          rating: 5,
-          date: "3 weeks ago",
-          iso_date: "2024-11-27T13:06:18Z",
-          iso_date_of_last_edit: "2024-11-27T13:06:18Z",
-          source: "Google",
-          review_id: "ChdDSUhNMG9nS0VJQ0FnSUNQdzh2V19nRRAB",
-          user: {
-            name: "Saqib Khan",
-            link: "https://www.google.com/maps/contrib/103180741247864606881?hl=en-US",
-            contributor_id: "103180741247864606881",
-            thumbnail: "https://lh3.googleusercontent.com/a-/ALV-UjUb_YbRXLXcICC4RcJsGc-fZ6EcByoIyuhG_tvOtnUnVtJgcqXH=s120-c-rp-mo-br100",
-            local_guide: true,
-            reviews: 5,
-            photos: 5
-          },
-          snippet:
-            "I recently visited Health Vision Physiotherapy and was extremely impressed with their services.\n\nI was treated by Dr. Danish, who was not only very skilled but also incredibly friendly, making the entire process comfortable and effective. The combination of their expertise and patient care exceeded my expectations. I highly recommend Health Vision Physiotherapy to anyone in need of physiotherapy treatment.",
-          extracted_snippet: {
-            original:
-              "I recently visited Health Vision Physiotherapy and was extremely impressed with their services.\n\nI was treated by Dr. Danish, who was not only very skilled but also incredibly friendly, making the entire process comfortable and effective. The combination of their expertise and patient care exceeded my expectations. I highly recommend Health Vision Physiotherapy to anyone in need of physiotherapy treatment."
-          },
-          likes: 1,
-          response: {
-            date: "3 weeks ago",
-            iso_date: "2024-11-28T07:09:05Z",
-            iso_date_of_last_edit: "2024-11-28T07:09:05Z",
-            snippet:
-              "Thank you for choosing Health Vision Physiotherapy and Rehabilitation. All the physiotherapists of skilled under the supervision of Dr. Zahoor Mir. The result of which is u r painfree. The evidence based patient histories meet the needs of patients. Thank you choosing and recommending Health Vision ",
-            extracted_snippet: {
-              original:
-                "Thank you for choosing Health Vision Physiotherapy and Rehabilitation. All the physiotherapists of skilled under the supervision of Dr. Zahoor Mir. The result of which is u r painfree. The evidence based patient histories meet the needs of patients. Thank you choosing and recommending Health Vision "
-            }
-          }
-        },
-        {
-          link: "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIcU9xcXZnRRAB!2m1!1s0x0:0x49903c71f364f39c!3m1!1s2@1:CIHM0ogKEICAgICHqOqqvgE%7CCgwI4uDMtgYQ4NyIrwI%7C?hl=en-US",
-          rating: 5,
-          date: "3 months ago",
-          iso_date: "2024-08-31T15:01:54Z",
-          iso_date_of_last_edit: "2024-08-31T15:01:54Z",
-          source: "Google",
-          review_id: "ChdDSUhNMG9nS0VJQ0FnSUNIcU9xcXZnRRAB",
-          user: {
-            name: "Aijaz Ahmad",
-            link: "https://www.google.com/maps/contrib/102149656051516555767?hl=en-US",
-            contributor_id: "102149656051516555767",
-            thumbnail: "https://lh3.googleusercontent.com/a/ACg8ocIwy8E_hyIlC9I4K3meLoMyEaYzGqnSc6bzg_rPIsD5pHclFw=s120-c-rp-mo-br100",
-            reviews: 1,
-            photos: 0
-          },
-          snippet:
-            "I had been treated here for my sciatica pain. Pain was radiating towards my both legs. I got treated by Dr. Zahoor Mir, a best ever physiotherapist in Bangalore. He treated me with advanced physiotherapy treatments. Within 8 days I got full relief from sciatica pain, which I was suffering from last 2 years.\n\nI found health vision most effective, affordable, pocket friendly and value for money. Thanks to The physiotherapists of Health Vision.",
-          extracted_snippet: {
-            original:
-              "I had been treated here for my sciatica pain. Pain was radiating towards my both legs. I got treated by Dr. Zahoor Mir, a best ever physiotherapist in Bangalore. He treated me with advanced physiotherapy treatments. Within 8 days I got full relief from sciatica pain, which I was suffering from last 2 years.\n\nI found health vision most effective, affordable, pocket friendly and value for money. Thanks to The physiotherapists of Health Vision."
-          },
-          likes: 1,
-          response: {
-            date: "3 months ago",
-            iso_date: "2024-09-07T16:29:30Z",
-            iso_date_of_last_edit: "2024-09-07T16:29:30Z",
-            snippet:
-              "Thank you for choosing Health Vision Physiotherapy and rehabilitation, a centre of advanced physiotherapy in Bangalore. We are happy that you got Sciatica treatment at health Vision. ",
-            extracted_snippet: {
-              original:
-                "Thank you for choosing Health Vision Physiotherapy and rehabilitation, a centre of advanced physiotherapy in Bangalore. We are happy that you got Sciatica treatment at health Vision. "
-            }
-          }
-        },
-        {
-          link: "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURQbGFfQlJ3EAE!2m1!1s0x0:0x49903c71f364f39c!3m1!1s2@1:CIHM0ogKEICAgIDPla_BRw%7CCgwIr87AugYQ4LaMoQM%7C?hl=en-US",
-          rating: 5,
-          date: "2 weeks ago",
-          iso_date: "2024-12-04T09:55:59Z",
-          iso_date_of_last_edit: "2024-12-04T09:55:59Z",
-          source: "Google",
-          review_id: "ChZDSUhNMG9nS0VJQ0FnSURQbGFfQlJ3EAE",
-          user: {
-            name: "Ragu Rani",
-            link: "https://www.google.com/maps/contrib/105406776209398842786?hl=en-US",
-            contributor_id: "105406776209398842786",
-            thumbnail: "https://lh3.googleusercontent.com/a/ACg8ocILWc1ql7phbrKCoo-GX6qY-ZcZ0R114Q99gRS-bt5gEOnVWg=s120-c-rp-mo-br100",
-            reviews: 1,
-            photos: 0
-          },
-          snippet:
-            "I had great experience in Health Health vision. I was suffering from frozen shoulder. At health vision, Dr. Ayesha Sadaf accessed me and treated me with KIASTM, Cupping, USG, IFT and exercise therapy. In very short period of time, my shoulder pain was gone. Dr. Ayesha Sadaf is gem to present magical results.",
-          extracted_snippet: {
-            original:
-              "I had great experience in Health Health vision. I was suffering from frozen shoulder. At health vision, Dr. Ayesha Sadaf accessed me and treated me with KIASTM, Cupping, USG, IFT and exercise therapy. In very short period of time, my shoulder pain was gone. Dr. Ayesha Sadaf is gem to present magical results."
-          },
-          likes: 0,
-          response: {
-            date: "2 weeks ago",
-            iso_date: "2024-12-04T10:00:20Z",
-            iso_date_of_last_edit: "2024-12-04T10:00:20Z",
-            snippet: "Thank you for choosing Health Vision Physiotherapy and Rehabilitation. We are happy that you treated by Dr. Ayesha Sadaf for frozen shoulder. ",
-            extracted_snippet: {
-              original: "Thank you for choosing Health Vision Physiotherapy and Rehabilitation. We are happy that you treated by Dr. Ayesha Sadaf for frozen shoulder. "
-            }
-          }
-        },
-        {
-          link: "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuM0tLUGJnEAE!2m1!1s0x0:0x49903c71f364f39c!3m1!1s2@1:CIHM0ogKEICAgIDn3KKPbg%7CCgwI6OT9twYQyJizugE%7C?hl=en-US",
-          rating: 5,
-          date: "2 months ago",
-          iso_date: "2024-10-04T04:43:20Z",
-          iso_date_of_last_edit: "2024-10-04T04:43:20Z",
-          source: "Google",
-          review_id: "ChZDSUhNMG9nS0VJQ0FnSURuM0tLUGJnEAE",
-          user: {
-            name: "Ayan Pal",
-            link: "https://www.google.com/maps/contrib/110210989724117466450?hl=en-US",
-            contributor_id: "110210989724117466450",
-            thumbnail: "https://lh3.googleusercontent.com/a-/ALV-UjWMj9x9f_MV5E8wuqXQGlnnMkCyB6nsBqDYsYBafgRQaUIfs558rQ=s120-c-rp-mo-ba3-br100",
-            local_guide: true,
-            reviews: 16,
-            photos: 3
-          },
-          snippet:
-            "I was having severe back pain due to my job and posture issue. I searched best physiotherapy for back pain, i was landed to Health Vision . Here Dr. Zahoor Mir assessed me and diagnosed as spondylosis and back spasm. He treated me with best physiotherapy treatments for 2 days then he gave me home physiotherapy services for 4 days. Now my pain is gone. I thank Dr. Zahoor Mir for treated my back pain . He is the best physiotherapist of Bangalore.",
-          extracted_snippet: {
-            original:
-              "I was having severe back pain due to my job and posture issue. I searched best physiotherapy for back pain, i was landed to Health Vision . Here Dr. Zahoor Mir assessed me and diagnosed as spondylosis and back spasm. He treated me with best physiotherapy treatments for 2 days then he gave me home physiotherapy services for 4 days. Now my pain is gone. I thank Dr. Zahoor Mir for treated my back pain . He is the best physiotherapist of Bangalore."
-          },
-          likes: 0,
-          response: {
-            date: "2 months ago",
-            iso_date: "2024-10-04T17:42:41Z",
-            iso_date_of_last_edit: "2024-10-04T17:42:41Z",
-            snippet: "Thanks for choosing Health Vision Physiotherapy and Rehabilitation jayanagar Bangalore. We are happy that you are treated for back pain and posture related issue. ",
-            extracted_snippet: {
-              original: "Thanks for choosing Health Vision Physiotherapy and Rehabilitation jayanagar Bangalore. We are happy that you are treated for back pain and posture related issue. "
-            }
-          }
-        },
-        {
-          link: "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuNUlldWRREAE!2m1!1s0x0:0x49903c71f364f39c!3m1!1s2@1:CIHM0ogKEICAgIDn5IeudQ%7CCgwIpfX5twYQ6Ne0wQI%7C?hl=en-US",
-          rating: 5,
-          date: "2 months ago",
-          iso_date: "2024-10-03T11:06:13Z",
-          iso_date_of_last_edit: "2024-10-03T11:06:13Z",
-          source: "Google",
-          review_id: "ChZDSUhNMG9nS0VJQ0FnSURuNUlldWRREAE",
-          user: {
-            name: "Sharwin Ani",
-            link: "https://www.google.com/maps/contrib/110470563118101615052?hl=en-US",
-            contributor_id: "110470563118101615052",
-            thumbnail: "https://lh3.googleusercontent.com/a-/ALV-UjVb99v7Xuj8gHZc6S3lHMlXhSN2fFwzeOxRzOb9IbkRglknm0tI=s120-c-rp-mo-br100",
-            local_guide: true,
-            reviews: 6,
-            photos: 0
-          },
-          snippet:
-            "I was suffering from severe back pain I took physiotherapy sessions but useless\nThen I came to know about advanced physiotherapy at health vision, then I took a chance . But my pain was relieved by Dr. Zahoor Mir in 2 days only. Later he assessed my overall body and advised for full body sports massage. It was really helpful, I am feeling free and flying joints.",
-          extracted_snippet: {
-            original:
-              "I was suffering from severe back pain I took physiotherapy sessions but useless\nThen I came to know about advanced physiotherapy at health vision, then I took a chance . But my pain was relieved by Dr. Zahoor Mir in 2 days only. Later he assessed my overall body and advised for full body sports massage. It was really helpful, I am feeling free and flying joints."
-          },
-          likes: 1,
-          response: {
-            date: "2 months ago",
-            iso_date: "2024-10-03T11:42:56Z",
-            iso_date_of_last_edit: "2024-10-03T11:42:56Z",
-            snippet:
-              "Thanks for choosing best physiotherapy for your neck pain. Our dedicated staff is committed to give you instant pain which advanced physiotherapy. You have taken sports body massage too, which is providing you great difference. ",
-            extracted_snippet: {
-              original:
-                "Thanks for choosing best physiotherapy for your neck pain. Our dedicated staff is committed to give you instant pain which advanced physiotherapy. You have taken sports body massage too, which is providing you great difference. "
-            }
-          }
-        }
-      ];
-     
-      const formattedReviews = reviews?.map((review) => transformReviewData(review));
-      console.log("reviews -----", formattedReviews);
-      const testimonialContainer = document.getElementById("testimonial-container");
-      formattedReviews.forEach((testimonial) => {
-        const testimonialDiv = document.createElement("div");
-        testimonialDiv.classList.add("swiper-slide");
+            //  .then(response => response.json())
+            //  .then(res => {
+            const reviews = res?.data;
 
-        testimonialDiv.innerHTML = `
+            const formattedReviews = reviews?.map((review) => transformReviewData(review));
+            console.log("reviews -----", formattedReviews);
+            const testimonialContainer = document.getElementById("testimonial-container");
+            formattedReviews.forEach((testimonial) => {
+              const testimonialDiv = document.createElement("div");
+              testimonialDiv.classList.add("swiper-slide");
+
+              testimonialDiv.innerHTML = `
         <div class="testimonial-item">
           <div class="testimonial-header">
             <div class="testimonial-rating">
@@ -3126,10 +2773,12 @@
         </div>
       `;
 
-        testimonialContainer.appendChild(testimonialDiv);
-      });
-
-      //  })
+              testimonialContainer.appendChild(testimonialDiv);
+            });
+          });
+      } catch (error) {
+        console.log("Error ---", error);
+      }
     </script>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
