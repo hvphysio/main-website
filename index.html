@@ -264,42 +264,82 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <div class="appointment-form">
-            <div class="hero-appointment-form-title">
-                <h2 class="text-anime-style-2"><span>Book</span> Appointment</h2>
-                <p class="wow fadeInUp">Easily schedule your appointment by a Filling out our simple form</p>
-            </div>
-        <form id="appointmentForm">
-
+          <div class="hero-appointment-form-title">
+            <h2 class="text-anime-style-2"><span>Book</span> Appointment</h2>
+            <p class="wow fadeInUp">Easily schedule your appointment by a Filling out our simple form</p>
+          </div>
+          <form id="appointmentForm">
             <div class="row">
-                <div class="form-group col-md-12 mb-4">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group col-md-6 mb-4">
-                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group col-md-6 mb-4">
-                    <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Email (optional)">
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group col-md-12 mb-4">
-                    <textarea type="text" name="condition" class="form-control" id="condition" placeholder="Enter Your Condition e.g Back Pain , Neck Pain" required></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
+              <div class="form-group col-md-12 mb-4">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter Name"
+                  required
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-md-6 mb-4">
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Phone Number"
+                  required
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-md-6 mb-4">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Email (optional)"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-md-12 mb-4">
+                <textarea
+                  type="text"
+                  name="condition"
+                  class="form-control"
+                  id="condition"
+                  placeholder="Enter Your Condition e.g Back Pain , Neck Pain"
+                  required
+                ></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
 
-                <div class="form-group col-md-6 mb-4">
-                    <label for="date">Date of Appointment</label>
-                    <input type="date" name ="date" class="form-control" id="date" placeholder="Date Of Appointment" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group col-md-6 mb-4">
-                    <label for="date">Time of Appointment</label>
-                    <input type="time" name ="time" class="form-control" id="time" placeholder="Time Of Appointment" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>       
-          <!-- <label for="name">Name:</label><br />
+              <div class="form-group col-md-6 mb-4">
+                <label for="date">Date of Appointment</label>
+                <input
+                  type="date"
+                  name="date"
+                  class="form-control"
+                  id="date"
+                  placeholder="Date Of Appointment"
+                  required
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-md-6 mb-4">
+                <label for="date">Time of Appointment</label>
+                <input
+                  type="time"
+                  name="time"
+                  class="form-control"
+                  id="time"
+                  placeholder="Time Of Appointment"
+                  required
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <!-- <label for="name">Name:</label><br />
           <input
             type="text"
             id="name"
@@ -326,7 +366,7 @@
             required
           /><br /><br />
  -->
-          <!-- <label for="date">Date of Appointment:</label><br />
+            <!-- <label for="date">Date of Appointment:</label><br />
           <input
             type="date"
             id="date"
@@ -334,7 +374,7 @@
             required
           /><br /><br /> -->
 
-          <!-- <label for="time">Time of Appointment:</label><br />
+            <!-- <label for="time">Time of Appointment:</label><br />
           <input
             type="time"
             id="time"
@@ -342,8 +382,13 @@
             required
           /><br /><br /> -->
 
-          <button type="submit" class="btn-default">Send via WhatsApp</button>
-        </form>
+            <button
+              type="submit"
+              class="btn-default"
+            >
+              Send via WhatsApp
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -2573,7 +2618,6 @@
       var btn3 = document.getElementById("myBtn3");
       var btn4 = document.getElementById("myBtn4");
 
-
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 
@@ -2605,42 +2649,60 @@
       };
     </script>
     <script>
-        function convertTime() {
-            // Get the time input value
-            const time24 = document.getElementById('time').value.trim();
+      function convertTime() {
+        // Get the time input value
+        const time24 = document.getElementById("time").value.trim();
 
-            // Split the time into hours and minutes
-            let [hours, minutes] = time24.split(':').map(Number);
+        // Split the time into hours and minutes
+        let [hours, minutes] = time24.split(":").map(Number);
 
-            // Determine AM or PM
-            const period = hours >= 12 ? 'PM' : 'AM';
+        // Determine AM or PM
+        const period = hours >= 12 ? "PM" : "AM";
 
-            // Convert hours to 12-hour format
-            hours = hours % 12 || 12; // Use modulus for 12-hour format, replace 0 with 12
+        // Convert hours to 12-hour format
+        hours = hours % 12 || 12; // Use modulus for 12-hour format, replace 0 with 12
 
-            // Format the result
-            const time12 = `${hours}:${minutes.toString().padStart(2, '0')} ${period}`;
-            
-            // Display the result
-            return time12;
+        // Format the result
+        const time12 = `${hours}:${minutes.toString().padStart(2, "0")} ${period}`;
+
+        // Display the result
+        return time12;
+      }
+      document.getElementById("appointmentForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        const name = document.getElementById("name").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const condition = document.getElementById("condition").value.trim();
+        const date = document.getElementById("date").value.trim();
+        const time = convertTime();
+
+        if (name && phone && condition && date && time) {
+          const message = `Hello, my name is ${name}. I would like to book an appointment for the following details:\n\nCondition: ${condition}\nDate: ${date}\nTime: ${time}\n\nPlease confirm the appointment, here my contact: ${phone}.`;
+          const whatsappURL = `https://wa.me/917006304372?text=${encodeURIComponent(message)}`;
+          window.open(whatsappURL, "_blank");
+        } else {
+          alert("Please fill in all the fields.");
         }
-        document.getElementById("appointmentForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form submission
-
-            const name = document.getElementById("name").value.trim();
-            const phone = document.getElementById("phone").value.trim();
-            const condition = document.getElementById("condition").value.trim();
-            const date = document.getElementById("date").value.trim();
-            const time = convertTime();
-
-            if (name && phone && condition && date && time) {
-                const message = `Hello, my name is ${name}. I would like to book an appointment for the following details:\n\nCondition: ${condition}\nDate: ${date}\nTime: ${time}\n\nPlease confirm the appointment, here my contact: ${phone}.`;
-                const whatsappURL = `https://wa.me/917006304372?text=${encodeURIComponent(message)}`;
-                window.open(whatsappURL, '_blank');
-            } else {
-                alert("Please fill in all the fields.");
-            }
-        });
+      });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Physiotherapist",
+        "name": "HV Physiotherapy",
+        "url": "https://www.hvphysiotherapy.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2147, E end C Main Rd, Jayanagar 9th block",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "postalCode": "560041",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91 70063 04372",
+        "description": "Specialized in physical therapy, hijama, stroke rehabilitation and sports physiotherapy."
+      }
     </script>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
