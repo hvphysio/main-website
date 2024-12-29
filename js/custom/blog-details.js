@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tagsContainer.innerHTML = `Tags: ${blogData.tags.map((tag) => `<a href="#">${tag}</a>`).join(" ")}`;
 
       // Set the cover image
-      document.querySelector(".post-cover-image").src = blogData.cover_image_data;
+      document.querySelector(".post-cover-image").src = `https://blogbee.vercel.app${blogData.cover_image_data}`;
     })
     .catch((error) => console.error("Error fetching blogs:", error));
 });
