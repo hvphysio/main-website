@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Set the quotation
 
       // Set the tags
-      const tagsContainer = document.querySelector(".post-tags .tag-links");
-      tagsContainer.innerHTML = `Tags: ${blogData.tags.map((tag) => `<a href="#">${tag}</a>`).join(" ")}`;
+    //   const tagsContainer = document.querySelector(".post-tags .tag-links");
+    //   tagsContainer.innerHTML = `Tags: ${blogData.tags.map((tag) => `<a href="#">${tag}</a>`).join(" ")}`;
 
       // Set the cover image
       document.querySelector(".post-cover-image").src = `https://blogbee.vercel.app${blogData.cover_image_data}`;
