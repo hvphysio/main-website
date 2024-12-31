@@ -1320,7 +1320,7 @@ header.main-header .header-sticky.active {
   display: flex;
   gap: var(--gap);
   min-width: 100%;
-  animation: galleryscroll 15s linear infinite;
+  animation: galleryscroll 45s linear infinite;
 }
 
 @keyframes galleryscroll {
