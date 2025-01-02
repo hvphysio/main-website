@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".blockquote p").textContent = blogData.quotation;
 
       }
+      document.querySelector('#updatedAt').innerHTML = `<i class="fa-regular fa-clock"></i> ${new Date(blogData.created_at).toDateString()}`
       // Set the quotation
 
       // Set the tags
