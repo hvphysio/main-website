@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="post-featured-image" data-cursor-text="View">
                 <figure>
                   <a href="${link}" class="image-anime">
-                    <img src="https://blogbee.vercel.app${item.cover_image_data}" alt="${item.title}" />
+                    <img loading="lazy" src="https://blogbee.vercel.app${item.cover_image_data}" alt="${item.title}" />
                   </a>
                 </figure>
               </div>

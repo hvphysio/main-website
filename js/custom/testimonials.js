@@ -51,7 +51,7 @@ try {
     <div class="testimonial-body">
       <div class="author-image">
         <figure class="image-anime">
-          <img src="${testimonial.thumbnail}" alt="" />
+          <img loading="lazy" src="${testimonial.thumbnail}" alt="" />
         </figure>
       </div>
       <div class="author-content">
