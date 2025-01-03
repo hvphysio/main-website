@@ -26,14 +26,12 @@ try {
   fetch("https://api.hvphysiotherapy.com/reviews")
     .then((response) => response.json())
     .then((res) => {
-      console.log("res---- reviees", res);
 
       //  .then(response => response.json())
       //  .then(res => {
       const reviews = res?.data;
 
       const formattedReviews = reviews?.map((review) => transformReviewData(review));
-      console.log("reviews -----", formattedReviews);
       const testimonialContainer = document.getElementById("testimonial-container");
       formattedReviews.forEach((testimonial) => {
         const testimonialDiv = document.createElement("div");
@@ -68,5 +66,5 @@ try {
       });
     });
 } catch (error) {
-  console.log("Error ---", error);
+  console.error("Error ---", error);
 }
