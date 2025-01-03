@@ -2034,6 +2034,11 @@ header.main-header .header-sticky.active {
   margin-bottom: 20px;
 }
 
+.post-item-body .title {
+  color: var(--primary-color);
+  font-size: 22px;
+}
+
 .post-item-body h2 {
   font-size: 20px;
   font-weight: 600;
