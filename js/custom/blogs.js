@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const blogContainer = document.getElementById("blog-container");
   const paginationContainer = document.getElementById("pagination-container");
-//   const apiUrl = "https://blogbee.vercel.app/api/blog/posts"; // Adjust the endpoint as needed
-  const apiUrl = "http://localhost:3000/api/blog/posts"; // Adjust the endpoint as needed
+  const apiUrl = "https://blogbee.vercel.app/api/blog/posts"; // Adjust the endpoint as needed
+//   const apiUrl = "http://localhost:3000/api/blog/posts"; // Adjust the endpoint as needed
   let currentPage = 1;
 
   const fetchBlogs = (page = 1) => {
