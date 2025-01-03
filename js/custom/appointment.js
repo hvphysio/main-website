@@ -27,10 +27,11 @@ btn3.onclick = function () {
 btn4.onclick = function () {
   modal.style.display = "block";
 };
-
-btn5.onclick = function () {
-  modal.style.display = "block";
-};
+if (btn5) {
+  btn5.onclick = function () {
+    modal.style.display = "block";
+  };
+}
 btn6.onclick = function () {
   modal.style.display = "block";
 };
