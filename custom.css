@@ -5121,3 +5121,11 @@ header.main-header .header-sticky.active{
     width: auto;
     background: transparent;
 }
+.navbar-toggler {
+    display: none;
+}
+.slicknav_btn {
+    position: absolute;
+    right: 15px;
+    top: -60px;
+}
