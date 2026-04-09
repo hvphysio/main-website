@@ -5352,3 +5352,15 @@ header.main-header .header-sticky.active {
     background-repeat: no-repeat;
     background-position: center;
 }
+.slicknav_menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent !important;
+    width: auto;
+    z-index: 9999;
+}
+
+.slicknav_btn {
+    float: right !important;
+}
