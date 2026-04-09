@@ -5208,3 +5208,127 @@ header.main-header .header-sticky.active {
   text-decoration: none;
   cursor: pointer;
 }
+@media (max-width: 991px) {
+
+    .navbar {
+        position: relative;}
+   .navbar-toggler {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    z-index: 999; 
+	}
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+@media (max-width: 991px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+}@media (max-width: 991px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+}@media (max-width: 991px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+}@media (max-width: 991px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+	@media (max-width: 991px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+		@media (max-width: 991px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+    }
