@@ -5221,3 +5221,10 @@ header.main-header .header-sticky.active {
     right: 15px;
     z-index: 9999;
 }
+.slicknav_menu {
+    position: fixed !important;
+    top: 15px !important;
+    right: 15px !important;
+    z-index: 99999 !important;
+    width: auto !important;
+}
