@@ -27,12 +27,6 @@
 			$("header .header-sticky").toggleClass("active", (fromTop > 600));
 		});
 	}	
-	
-	/* Slick Menu JS */
-	$('#menu').slicknav({
-		label : '',
-		prependTo : '.responsive-menu'
-	});
 
 	if($("a[href='#top']").length){
 		$("a[href='#top']").click(function() {
@@ -329,4 +323,16 @@
 		});
 	}
 	
-})(jQuery);
+})(jQuery);$(window).on('load', function () {
+    if ($('#menu').length && !$('.responsive-menu .slicknav_menu').length) {
+        $('#menu').slicknav({
+            label: '',
+            prependTo: '.responsive-menu'
+        });
+		$(window).on('load', function () {
+    if ($('#menu').length && !$('.responsive-menu .slicknav_menu').length) {
+        $('#menu').slicknav({
+            label: '',
+            prependTo: '.responsive-menu'
+        });
+    
