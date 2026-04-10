@@ -5235,3 +5235,11 @@ header.main-header .header-sticky.active {
     left: auto !important;
     z-index: 99999 !important;
 }
+.slicknav_menu {
+    background: transparent !important;
+    padding: 0 !important;
+    width: auto !important;
+    min-height: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
