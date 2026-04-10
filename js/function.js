@@ -313,10 +313,8 @@
 	}
 	
 })(jQuery);
-
-$(window).on('load', function () {
-    if ($('#menu').length) {
-        $('.responsive-menu').empty();
+$(document).ready(function () {
+    if ($('#menu').length && $('.responsive-menu').length) {
         $('#menu').slicknav({
             label: '',
             prependTo: '.responsive-menu'
