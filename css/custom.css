@@ -5228,3 +5228,10 @@ header.main-header .header-sticky.active {
     z-index: 99999 !important;
     width: auto !important;
 }
+.slicknav_btn {
+    position: fixed !important;
+    top: 15px !important;
+    right: 15px !important;
+    left: auto !important;
+    z-index: 99999 !important;
+}
