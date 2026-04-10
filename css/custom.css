@@ -4388,7 +4388,37 @@ header.main-header .header-sticky.active {
   .service-catagery-list ul li a {
     font-size: 16px;
   }
+@media (max-width: 991px) {
+  .responsive-menu {
+    position: fixed !important;
+    top: 15px !important;
+    right: 15px !important;
+    z-index: 99999 !important;
+  }
 
+  .slicknav_menu {
+    background: transparent !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+
+  .slicknav_btn {
+    margin: 0 !important;
+    float: none !important;
+  }
+
+  .slicknav_nav {
+    position: absolute !important;
+    top: 100% !important;
+    right: 0 !important;
+    width: 260px !important;
+    background: #ffffff !important;
+  }
+
+  .slicknav_nav a {
+    color: #000000 !important;
+  }
+}
   .sidebar-cta-box .icon-box {
     margin-bottom: 20px;
   }
