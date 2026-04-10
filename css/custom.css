@@ -5215,18 +5215,14 @@ header.main-header .header-sticky.active {
     .navbar-brand {
         margin-right: auto;
     } 
-.slicknav_menu {
-    position: absolute;
-    top: 30px;
-    right: 15px;
-    z-index: 9999;
+
+.slicknav_nav {
+    background: #ffffff !important;
+    margin-top: 45px !important;
 }
-.slicknav_menu {
-    position: fixed !important;
-    top: 15px !important;
-    right: 15px !important;
-    z-index: 99999 !important;
-    width: auto !important;
+
+.slicknav_nav a {
+    color: #000000 !important;
 }
 .slicknav_menu {
     position: fixed !important;
@@ -5237,21 +5233,7 @@ header.main-header .header-sticky.active {
 }
 
 .slicknav_btn {
-    float: right !important;
-}
-.slicknav_menu {
-    background: transparent !important;
-    padding: 0 !important;
-    width: auto !important;
-    min-height: 0 !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-.slicknav_nav {
-    background: #ffffff !important;
-    margin-top: 45px !important;
-}
-
-.slicknav_nav a {
-    color: #000000 !important;
+    position: relative !important;
+    right: 0 !important;
+    top: 0 !important;
 }
