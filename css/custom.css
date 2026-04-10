@@ -5243,3 +5243,11 @@ header.main-header .header-sticky.active {
     border: none !important;
     box-shadow: none !important;
 }
+.slicknav_nav {
+    background: #ffffff !important;
+    margin-top: 45px !important;
+}
+
+.slicknav_nav a {
+    color: #000000 !important;
+}
