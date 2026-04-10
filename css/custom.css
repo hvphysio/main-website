@@ -5364,3 +5364,45 @@ header.main-header .header-sticky.active {
 .slicknav_btn {
     float: right !important;
 }
+@media only screen and (max-width: 991px) {
+  .responsive-menu {
+    display: block !important;
+    position: fixed !important;
+    top: 78px !important;
+    right: 15px !important;
+    z-index: 99999 !important;
+    width: auto !important;
+  }
+
+  .responsive-menu .slicknav_menu {
+    display: block !important;
+    position: static !important;
+    width: auto !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  .responsive-menu .slicknav_btn {
+    display: flex !important;
+    float: none !important;
+    margin: 0 !important;
+    background: var(--primary-color) !important;
+    border-radius: 8px !important;
+  }
+
+  .responsive-menu .slicknav_nav {
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    right: 0 !important;
+    left: auto !important;
+    min-width: 240px !important;
+    background: var(--primary-color) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .responsive-menu .slicknav_nav a,
+  .responsive-menu .slicknav_nav .slicknav_row {
+    color: #ffffff !important;
+  }
+}
