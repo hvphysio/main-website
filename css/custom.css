@@ -728,10 +728,11 @@ header.main-header .header-sticky.active {
 }
 
 .slicknav_menu {
-  position: absolute;
+  position: relative;
   width: 100%;
   padding: 0;
   background: var(--primary-color);
+  z-index: 9999;
 }
 
 .slicknav_menu ul {
