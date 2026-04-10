@@ -5215,3 +5215,9 @@ header.main-header .header-sticky.active {
     .navbar-brand {
         margin-right: auto;
     } 
+.slicknav_menu {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    z-index: 9999;
+}
