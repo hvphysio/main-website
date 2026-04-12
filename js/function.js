@@ -22,17 +22,11 @@
 		$(window).on("scroll", function() {
 			var fromTop = $(window).scrollTop();
 			setHeaderHeight();
-			var headerHeight = $('header .header-sticky').outerHeight()
+			var headerHeight = $('header .header-sticky').outerHeight();
 			$("header .header-sticky").toggleClass("hide", (fromTop > headerHeight + 100));
 			$("header .header-sticky").toggleClass("active", (fromTop > 600));
 		});
 	}	
-	
-	/* Slick Menu JS */
-	$('#menu').slicknav({
-		label : '',
-		prependTo : '.responsive-menu'
-	});
 
 	if($("a[href='#top']").length){
 		$("a[href='#top']").click(function() {
@@ -90,8 +84,8 @@
 		$('.skills-progress-bar').waypoint(function() {
 			$('.skillbar').each(function() {
 				$(this).find('.count-bar').animate({
-				width:$(this).attr('data-percent')
-				},2000);
+					width: $(this).attr('data-percent')
+				}, 2000);
 			});
 		},{
 			offset: '50%'
@@ -141,18 +135,18 @@
 		let staggerAmount 	= 0.05,
 			translateXValue = 0,
 			delayValue 		= 0.5,
-		   animatedTextElements = document.querySelectorAll('.text-anime-style-1');
+		    animatedTextElements = document.querySelectorAll('.text-anime-style-1');
 		
 		animatedTextElements.forEach((element) => {
 			let animationSplitText = new SplitText(element, { type: "chars, words" });
-				gsap.from(animationSplitText.words, {
+			gsap.from(animationSplitText.words, {
 				duration: 1,
 				delay: delayValue,
 				x: 20,
 				autoAlpha: 0,
 				stagger: staggerAmount,
 				scrollTrigger: { trigger: element, start: "top 85%" },
-				});
+			});
 		});		
 	}
 	
@@ -165,23 +159,22 @@
 		
 		animatedTextElements.forEach((element) => {
 			let animationSplitText = new SplitText(element, { type: "chars, words" });
-				gsap.from(animationSplitText.chars, {
-					duration: 1,
-					delay: delayValue,
-					x: translateXValue,
-					autoAlpha: 0,
-					stagger: staggerAmount,
-					ease: easeType,
-					scrollTrigger: { trigger: element, start: "top 85%"},
-				});
+			gsap.from(animationSplitText.chars, {
+				duration: 1,
+				delay: delayValue,
+				x: translateXValue,
+				autoAlpha: 0,
+				stagger: staggerAmount,
+				ease: easeType,
+				scrollTrigger: { trigger: element, start: "top 85%"},
+			});
 		});		
 	}
 	
 	if ($('.text-anime-style-3').length) {		
-		let	animatedTextElements = document.querySelectorAll('.text-anime-style-3');
+		let animatedTextElements = document.querySelectorAll('.text-anime-style-3');
 		
-		 animatedTextElements.forEach((element) => {
-			//Reset if needed
+		animatedTextElements.forEach((element) => {
 			if (element.animation) {
 				element.animation.progress(1).kill();
 				element.split.revert();
@@ -199,7 +192,7 @@
 			});
 
 			element.animation = gsap.to(element.split.chars, {
-				scrollTrigger: { trigger: element,	start: "top 90%" },
+				scrollTrigger: { trigger: element, start: "top 90%" },
 				x: "0",
 				y: "0",
 				rotateX: "0",
@@ -233,7 +226,6 @@
 	});
 
 	function submitForm(){
-		/* Initiate Variables With Form Content*/
 		var fullname = $("#fullname").val();
 		var email = $("#email").val();
 		var phone = $("#phone").val();
@@ -248,7 +240,7 @@
 				if (text == "success"){
 					formSuccess();
 				} else {
-					submitMSG(false,text);
+					submitMSG(false, text);
 				}
 			}
 		});
@@ -256,15 +248,11 @@
 
 	function formSuccess(){
 		$contactform[0].reset();
-		submitMSG(true, "Message Sent Successfully!")
+		submitMSG(true, "Message Sent Successfully!");
 	}
 
 	function submitMSG(valid, msg){
-		if(valid){
-			var msgClasses = "h3 text-success";
-		} else {
-			var msgClasses = "h3 text-danger";
-		}
+		var msgClasses = valid ? "h3 text-success" : "h3 text-danger";
 		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 	}
 	/* Contact form validation end */
@@ -279,11 +267,10 @@
 	});
 
 	function submitappointmentForm(){
-		/* Initiate Variables With Form Content*/
 		var name = $("#name").val();
 		var email = $("#email").val();
 		var phone = $("#phone").val();
-		var phone = $("#services").val();
+		var services = $("#services").val();
 		var date = $("#date").val();
 
 		$.ajax({
@@ -294,7 +281,7 @@
 				if (text == "success"){
 					appointmentformSuccess();
 				} else {
-					appointmentsubmitMSG(false,text);
+					appointmentsubmitMSG(false, text);
 				}
 			}
 		});
@@ -302,15 +289,11 @@
 
 	function appointmentformSuccess(){
 		$appointmentForm[0].reset();
-		appointmentsubmitMSG(true, "Message Sent Successfully!")
+		appointmentsubmitMSG(true, "Message Sent Successfully!");
 	}
 
 	function appointmentsubmitMSG(valid, msg){
-		if(valid){
-			var msgClasses = "h3 text-success";
-		} else {
-			var msgClasses = "h3 text-danger";
-		}
+		var msgClasses = valid ? "h3 text-success" : "h3 text-danger";
 		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 	}
 	/* Appointment form validation end */
@@ -330,3 +313,11 @@
 	}
 	
 })(jQuery);
+$(document).ready(function () {
+    if ($('#menu').length && $('.responsive-menu').length) {
+        $('#menu').slicknav({
+            label: '',
+            prependTo: '.responsive-menu'
+        });
+    }
+});
