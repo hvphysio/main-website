@@ -5158,140 +5158,83 @@ header.main-header .header-sticky.active {
   text-decoration: none;
   cursor: pointer;
 }
-@media (max-width: 991px) {
 
-    .navbar {
-        position: relative;
-    }
-}
-   .navbar-brand {
-        margin-right: auto;
-    }
-@media (max-width: 991px) {
-
-    .navbar {
-        position: relative;
-    }
-    .navbar-brand {
-        margin-right: auto;
-    }
-}@media (max-width: 991px) {
-
-    .navbar {
-        position: relative;
-    }
-    .navbar-brand {
-        margin-right: auto;
-    }
-}@media (max-width: 991px) {
-
-    .navbar {
-        position: relative;
-    }
-    .navbar-brand {
-        margin-right: auto;
-    }
-}@media (max-width: 991px) {
-
-    .navbar {
-        position: relative;
-    }
-    .navbar-brand {
-        margin-right: auto;
-    }
-	@media (max-width: 991px) {
-
-    .navbar {
-        position: relative;
-    }
-    .navbar-brand {
-        margin-right: auto;
-    }
-		@media (max-width: 991px) {
-
-    .navbar {
-        position: relative;
-    }
-    .navbar-brand {
-        margin-right: auto;
-    } 
-.slicknav_menu {
-    position: absolute;
-    top: 30px;
-    right: 15px;
-    z-index: 9999;
-}
-.slicknav_menu {
-    position: fixed !important;
-    top: 15px !important;
-    right: 15px !important;
-    z-index: 99999 !important;
-    width: auto !important;
-}
 .slicknav_btn {
-    position: fixed !important;
-    top: 15px !important;
-    right: 15px !important;
-    left: auto !important;
-    z-index: 99999 !important;
-}
-.slicknav_menu {
-    background: transparent !important;
-    padding: 0 !important;
-    width: auto !important;
-    min-height: 0 !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-.slicknav_nav {
-    background: #ffffff !important;
-    margin-top: 45px !important;
+  background-color: #153c33 !important;
 }
 
-.slicknav_nav a {
-    color: #000000 !important;
-}
-@media only screen and (max-width: 991px) {
+@media (max-width: 991px) {
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar .container {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+    flex-shrink: 0;
+  }
+
+  .main-menu {
+    display: none !important;
+  }
 
   .responsive-menu {
     display: block !important;
-    position: fixed !important;
-    top: 85px !important;
-    right: 15px !important;
+    position: relative !important;
+    transform: none !important;
     z-index: 99999 !important;
     width: auto !important;
+    flex-shrink: 0;
+    margin-left: 10px;
   }
 
   .responsive-menu .slicknav_menu {
     background: transparent !important;
     padding: 0 !important;
     width: auto !important;
+    position: static !important;
+    min-height: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 
   .responsive-menu .slicknav_btn {
+    position: static !important;
     float: none !important;
     margin: 0 !important;
-    background: #0d6efd !important;
-    border-radius: 6px !important;
+    background: #153c33 !important;
+    border-radius: 8px !important;
+    padding: 10px 12px !important;
+    border: 2px solid #619e90 !important;
+    box-shadow: 0 2px 8px rgba(21, 60, 51, 0.3) !important;
   }
 
   .responsive-menu .slicknav_nav {
     position: absolute !important;
-    top: calc(100% + 8px) !important;
-    right: 0 !important;
+    top: auto !important;
+    right: 15px !important;
     left: auto !important;
     min-width: 240px !important;
     background: #ffffff !important;
     border-radius: 10px !important;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+    z-index: 99999 !important;
   }
 
   .responsive-menu .slicknav_nav a {
-    color: #000 !important;
+    color: #153c33 !important;
     background: #fff !important;
   }
 
   .responsive-menu .slicknav_nav a:hover {
-    color: #0d6efd !important;
+    color: #619e90 !important;
+    background: #f5f9f8 !important;
   }
 }
