@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //  const apiUrl = "http://localhost:3000/api/blog/posts"; // Adjust the endpoint as needed
   // Dynamic Content Population
   const fetchBlogs = (page = 1) => {
-    fetch(`${apiUrl}?page=${page}&limit=3`)
+    fetch(`${apiUrl}?page=${page}&limit=2`)
       .then((response) => response.json())
       .then((res) => {
         renderBlogIndex(res.data);
