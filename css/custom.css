@@ -5269,3 +5269,14 @@ header.main-header .header-sticky.active {
   font-size: 40px;
   line-height: 1.2;
 }
+.hero-content {
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 60px;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.2;
+}
