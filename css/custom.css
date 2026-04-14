@@ -5238,3 +5238,23 @@ header.main-header .header-sticky.active {
     background: #f5f9f8 !important;
   }
 }
+.seo-keywords-section {
+  padding: 40px 0;
+}
+
+.seo-keywords-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.seo-keywords-section p {
+  margin-bottom: 10px;
+}
+
+.seo-keywords-section ul {
+  padding-left: 20px;
+}
+
+.seo-keywords-section li {
+  margin-bottom: 8px;
+}
