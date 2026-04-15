@@ -5238,3 +5238,20 @@ header.main-header .header-sticky.active {
     background: #f5f9f8 !important;
   }
 }
+.common-read-btn {
+  margin-top: 12px;
+  background-color: #2e8b78;
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.common-read-btn:hover {
+  background-color: #246e5f;
+  transform: translateY(-2px);
+}
