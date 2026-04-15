@@ -5255,3 +5255,29 @@ header.main-header .header-sticky.active {
   background-color: #246e5f;
   transform: translateY(-2px);
 }
+.more-text,
+.about-more-text {
+  display: none;
+}
+
+.more-text.show-more,
+.about-more-text.show-more {
+  display: block !important;
+}
+
+.common-read-btn {
+  margin-top: 12px;
+  background-color: #2e8b78;
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.common-read-btn:hover {
+  background-color: #246e5f;
+}
