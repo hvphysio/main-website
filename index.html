@@ -2860,22 +2860,41 @@ Health Vision Physiotherapy and Rehabilitation in Jayanagar Bangalore provides e
     <script src="js/wow.js" defer></script>
     <!-- Main Custom js file -->
     <script src="js/function.js" defer></script>
-    <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.querySelector(".read-more-btn");
-  const moreText = document.querySelector(".more-text");
 
-  if (btn && moreText) {
-    btn.addEventListener("click", function () {
-      if (moreText.style.display === "block") {
-        moreText.style.display = "none";
-        btn.textContent = "See More";
+  // First Read More (SEO section)
+  const btn1 = document.querySelector(".read-more-btn");
+  const moreText1 = document.querySelector(".more-text");
+
+  if (btn1 && moreText1) {
+    btn1.addEventListener("click", function () {
+      if (moreText1.style.display === "block") {
+        moreText1.style.display = "none";
+        btn1.textContent = "See More";
       } else {
-        moreText.style.display = "block";
-        btn.textContent = "See Less";
+        moreText1.style.display = "block";
+        btn1.textContent = "See Less";
       }
     });
   }
+
+  // Second Read More (About section)
+  const btn2 = document.querySelector(".about-read-more-btn");
+  const moreText2 = document.querySelector(".about-more-text");
+
+  if (btn2 && moreText2) {
+    btn2.addEventListener("click", function () {
+      if (moreText2.style.display === "block") {
+        moreText2.style.display = "none";
+        btn2.textContent = "Read More";
+      } else {
+        moreText2.style.display = "block";
+        btn2.textContent = "Read Less";
+      }
+    });
+  }
+
 });
 </script>
   </body>
