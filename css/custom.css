@@ -5292,3 +5292,22 @@ header.main-header .header-sticky.active {
   cursor: pointer;
   font-size: 18px;
 }
+.about-more-text {
+  display: none;
+}
+
+.about-read-more-btn {
+  margin-top: 12px;
+  background-color: #2e8b78;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.about-read-more-btn:hover {
+  background-color: #246e5f;
+}
