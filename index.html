@@ -2849,6 +2849,23 @@ Health Vision Physiotherapy and Rehabilitation in Jayanagar Bangalore provides e
     <script src="js/wow.js" defer></script>
     <!-- Main Custom js file -->
     <script src="js/function.js" defer></script>
-    
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.querySelector(".read-more-btn");
+  const moreText = document.querySelector(".more-text");
+
+  if (btn && moreText) {
+    btn.addEventListener("click", function () {
+      if (moreText.style.display === "block") {
+        moreText.style.display = "none";
+        btn.textContent = "See More";
+      } else {
+        moreText.style.display = "block";
+        btn.textContent = "See Less";
+      }
+    });
+  }
+});
+</script>
   </body>
 </html>
