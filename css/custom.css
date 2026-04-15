@@ -5280,3 +5280,15 @@ header.main-header .header-sticky.active {
   font-size: 40px;
   line-height: 1.2;
 }
+.more-text {
+  display: none;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  background: none;
+  border: 2px solid #000;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 18px;
+}
