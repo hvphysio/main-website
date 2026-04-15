@@ -916,8 +916,7 @@ Best Physiotherapy Clinic in Jayanagar, BTM, JP Nagar, Koramangala, Banashankari
     We also provide expert neurological rehabilitation for stroke, sciatica, Bell’s palsy and nerve impingement. Our services include post operative rehabilitation like TKR, THR, TSR and arthroscopic surgeries. Our experienced physiotherapists offer advanced treatment and home physiotherapy services across Jayanagar, BTM, JP Nagar, Koramangala and surrounding areas of Bangalore.
   </p>
 </div>
-
-<button class="common-read-btn" type="button">Read More</button>
+<button class="common-read-btn" type="button" onclick="toggleSeoMore()">Read More</button>
               </div>
               <!-- Section Title End -->
 
@@ -1027,7 +1026,7 @@ Best Physiotherapy Clinic in Jayanagar, BTM, JP Nagar, Koramangala, Banashankari
     </div>
 
     <!-- Button -->
-   <button class="common-read-btn" type="button">Read More</button>
+   <button class="common-read-btn" type="button" onclick="toggleAboutMore()">Read More</button>
 
   </div>
 </section>
@@ -2861,41 +2860,35 @@ Health Vision Physiotherapy and Rehabilitation in Jayanagar Bangalore provides e
     <!-- Main Custom js file -->
     <script src="js/function.js" defer></script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+function toggleSeoMore() {
+  const moreText = document.querySelector(".more-text");
+  const btn = document.querySelectorAll(".common-read-btn")[0];
 
-  // First section (SEO)
-  const btn1 = document.querySelectorAll(".common-read-btn")[0];
-  const moreText1 = document.querySelector(".more-text");
+  if (moreText) {
+    moreText.classList.toggle("show-more");
 
-  if (btn1 && moreText1) {
-    btn1.addEventListener("click", function () {
-      if (moreText1.style.display === "block") {
-        moreText1.style.display = "none";
-        btn1.textContent = "Read More";
-      } else {
-        moreText1.style.display = "block";
-        btn1.textContent = "Read Less";
-      }
-    });
+    if (moreText.classList.contains("show-more")) {
+      btn.textContent = "Read Less";
+    } else {
+      btn.textContent = "Read More";
+    }
   }
+}
 
-  // Second section (About)
-  const btn2 = document.querySelectorAll(".common-read-btn")[1];
-  const moreText2 = document.querySelector(".about-more-text");
+function toggleAboutMore() {
+  const moreText = document.querySelector(".about-more-text");
+  const btn = document.querySelectorAll(".common-read-btn")[1];
 
-  if (btn2 && moreText2) {
-    btn2.addEventListener("click", function () {
-      if (moreText2.style.display === "block") {
-        moreText2.style.display = "none";
-        btn2.textContent = "Read More";
-      } else {
-        moreText2.style.display = "block";
-        btn2.textContent = "Read Less";
-      }
-    });
+  if (moreText) {
+    moreText.classList.toggle("show-more");
+
+    if (moreText.classList.contains("show-more")) {
+      btn.textContent = "Read Less";
+    } else {
+      btn.textContent = "Read More";
+    }
   }
-
-});
+}
 </script>
   </body>
 </html>
