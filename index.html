@@ -2860,33 +2860,23 @@ Health Vision Physiotherapy and Rehabilitation in Jayanagar Bangalore provides e
     <!-- Main Custom js file -->
     <script src="js/function.js" defer></script>
 <script>
-function toggleSeoMore() {
-  const moreText = document.querySelector(".more-text");
-  const btn = document.querySelectorAll(".common-read-btn")[0];
+function toggleAboutMore() {
+  const moreText = document.querySelector(".about-more-text");
+  const btn = document.querySelector('button[onclick="toggleAboutMore()"]');
 
-  if (moreText) {
+  if (moreText && btn) {
     moreText.classList.toggle("show-more");
-
-    if (moreText.classList.contains("show-more")) {
-      btn.textContent = "Read Less";
-    } else {
-      btn.textContent = "Read More";
-    }
+    btn.textContent = moreText.classList.contains("show-more") ? "Read Less" : "Read More";
   }
 }
 
-function toggleAboutMore() {
-  const moreText = document.querySelector(".about-more-text");
-  const btn = document.querySelectorAll(".common-read-btn")[1];
+function toggleSeoMore() {
+  const moreText = document.querySelector(".more-text");
+  const btn = document.querySelector('button[onclick="toggleSeoMore()"]');
 
-  if (moreText) {
+  if (moreText && btn) {
     moreText.classList.toggle("show-more");
-
-    if (moreText.classList.contains("show-more")) {
-      btn.textContent = "Read Less";
-    } else {
-      btn.textContent = "Read More";
-    }
+    btn.textContent = moreText.classList.contains("show-more") ? "Read Less" : "Read More";
   }
 }
 </script>
