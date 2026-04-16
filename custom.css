@@ -5281,3 +5281,15 @@ header.main-header .header-sticky.active {
 .common-read-btn:hover {
   background-color: #246e5f;
 }
+
+
+
+.more-text,
+.about-more-text {
+  display: none;
+}
+
+.more-text.show-more,
+.about-more-text.show-more {
+  display: block !important;
+}
