@@ -5328,3 +5328,7 @@ header.main-header .header-sticky.active {
 .about-more-text.show-more {
   display: block !important;
 }
+.more-text.show-more,
+.about-more-text.show-more {
+  display: block !important;
+}
