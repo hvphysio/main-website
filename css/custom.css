@@ -5356,3 +5356,17 @@ header.main-header .header-sticky.active {
   color: #1f5c4c;
   margin-bottom: 8px;
 }
+.call-now-btn {
+  display: inline-flex;
+  margin-left: 10px;
+  background: #0d6efd;
+}
+
+@media (max-width: 767px) {
+  .call-now-btn {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
