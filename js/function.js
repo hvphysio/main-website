@@ -258,44 +258,44 @@
 	/* Contact form validation end */
 
 	/* Appointment form validation */
-	var $appointmentForm = $("#appointmentForm");
-	$appointmentForm.validator({focus: false}).on("submit", function (event) {
-		if (!event.isDefaultPrevented()) {
-			event.preventDefault();
-			submitappointmentForm();
-		}
-	});
-
-	function submitappointmentForm(){
-		var name = $("#name").val();
-var email = $("#email").val();
-var phone = $("#phone").val();
-var condition = $("#condition").val();
-var date = $("#date").val();
-var time = $("#time").val();
-		$.ajax({
-			type: "POST",
-			url: "form-appointment.php",
-			data: "name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email) + "&phone=" + encodeURIComponent(phone) + "&condition=" + encodeURIComponent(condition) + "&date=" + encodeURIComponent(date) + "&time=" + encodeURIComponent(time),
-			success : function(text){
-				if (text == "success"){
-					appointmentformSuccess();
-				} else {
-					appointmentsubmitMSG(false, text);
-				}
-			}
-		});
+var $appointmentForm = $("#appointmentForm");
+$appointmentForm.validator({focus: false}).on("submit", function (event) {
+	if (!event.isDefaultPrevented()) {
+		event.preventDefault();
+		submitappointmentForm();
 	}
+});
 
-	function appointmentformSuccess(){
-		$appointmentForm[0].reset();
-		appointmentsubmitMSG(true, "Message Sent Successfully!");
-	}
+function submitappointmentForm(){
+	var name = $("#name").val().trim();
+	var email = $("#email").val().trim();
+	var phone = $("#phone").val().trim();
+	var condition = $("#condition").val().trim();
+	var date = $("#date").val().trim();
+	var time = $("#time").val().trim();
 
-	function appointmentsubmitMSG(valid, msg){
-		var msgClasses = valid ? "h3 text-success" : "h3 text-danger";
-		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-	}
+	var message = "Hello, I want to book an appointment.%0A%0A"
+		+ "Name: " + encodeURIComponent(name) + "%0A"
+		+ "Phone: " + encodeURIComponent(phone) + "%0A"
+		+ "Email: " + encodeURIComponent(email ? email : "Not provided") + "%0A"
+		+ "Condition: " + encodeURIComponent(condition) + "%0A"
+		+ "Appointment Date: " + encodeURIComponent(date) + "%0A"
+		+ "Appointment Time: " + encodeURIComponent(time);
+
+	var whatsappURL = "https://wa.me/917006304372?text=" + message;
+	window.open(whatsappURL, "_blank");
+	appointmentformSuccess();
+}
+
+function appointmentformSuccess(){
+	$appointmentForm[0].reset();
+	appointmentsubmitMSG(true, "Redirecting to WhatsApp...");
+}
+
+function appointmentsubmitMSG(valid, msg){
+	var msgClasses = valid ? "h3 text-success" : "h3 text-danger";
+	$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}
 	/* Appointment form validation end */
 
 	/* Animated Wow Js */	
