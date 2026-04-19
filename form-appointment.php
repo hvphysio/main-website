@@ -9,10 +9,9 @@
 		$name = $_POST["name"];
 	}
 
-	// EMAIL
-	if (empty($_POST["email"])) {
-		$errorMSG .= "Email is required. ";
-	} else {
+		// EMAIL
+	$email = "";
+	if (!empty($_POST["email"])) {
 		$email = $_POST["email"];
 	}
 
@@ -23,11 +22,11 @@
 		$phone = $_POST["phone"];
 	}
 
-	// services
-	if (empty($_POST["services"])) {
-		$errorMSG .= "services is required. ";
+	// CONDITION
+	if (empty($_POST["condition"])) {
+		$errorMSG .= "Condition is required. ";
 	} else {
-		$services = $_POST["services"];
+		$condition = $_POST["condition"];
 	}
 
 	// DATE
@@ -37,6 +36,12 @@
 		$date = $_POST["date"];
 	}
 
+	// TIME
+	if (empty($_POST["time"])) {
+		$errorMSG .= "Time is required. ";
+	} else {
+		$time = $_POST["time"];
+	}
 	$subject ='Book Appointment from site';
 
 	$EmailTo = "info@yourdomain.com"; // Replace with your email.
@@ -49,18 +54,21 @@
 	$Body .= "Email: ";
 	$Body .= $email;
 	$Body .= "\n";
-	$Body .= "Phone: ";
+		$Body .= "Phone: ";
 	$Body .= $phone;
 	$Body .= "\n";
-	$Body .= "services: ";
-	$Body .= $services;
+	$Body .= "Condition: ";
+	$Body .= $condition;
 	$Body .= "\n";
 	$Body .= "Date: ";
 	$Body .= $date;
 	$Body .= "\n";
+	$Body .= "Time: ";
+	$Body .= $time;
+	$Body .= "\n";
 
 	// send email
-	$success = @mail($EmailTo, $subject, $Body, "From:".$email);
+		$success = @mail($EmailTo, $subject, $Body, "From: noreply@hvphysiotherapy.com");
 
 	// redirect to success page
 	if ($success && $errorMSG == ""){
