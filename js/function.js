@@ -268,15 +268,15 @@
 
 	function submitappointmentForm(){
 		var name = $("#name").val();
-		var email = $("#email").val();
-		var phone = $("#phone").val();
-		var services = $("#services").val();
-		var date = $("#date").val();
-
+var email = $("#email").val();
+var phone = $("#phone").val();
+var condition = $("#condition").val();
+var date = $("#date").val();
+var time = $("#time").val();
 		$.ajax({
 			type: "POST",
 			url: "form-appointment.php",
-			data: "name=" + name + "&email=" + email + "&phone=" + phone + "&services=" + services + "&date=" + date,
+			data: "name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email) + "&phone=" + encodeURIComponent(phone) + "&condition=" + encodeURIComponent(condition) + "&date=" + encodeURIComponent(date) + "&time=" + encodeURIComponent(time),
 			success : function(text){
 				if (text == "success"){
 					appointmentformSuccess();
