@@ -5349,3 +5349,10 @@ header.main-header .header-sticky.active {
     font-size: 14px;
   }
 }
+.appointment-field-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f5c4c;
+  margin-bottom: 8px;
+}
