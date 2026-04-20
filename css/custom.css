@@ -916,11 +916,7 @@ header.main-header .header-sticky.active {
 }
 
 .hero.hero-slider .hero-slider-layout .hero-slide .hero-slider-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  position: relative;
 }
 
 .hero.hero-slider .hero-slider-layout .hero-slide .hero-slider-image img {
