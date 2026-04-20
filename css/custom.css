@@ -5399,3 +5399,17 @@ header.main-header .header-sticky.active {
   }
 
 }
+@media (min-width: 992px) {
+
+  .hero-slider-layout .hero-slide {
+    height: auto;
+    max-height: 600px;
+    overflow: hidden;
+  }
+
+  .hero.hero-slider .hero-slider-layout .hero-slide .hero-slider-image img {
+    width: 100%;
+    height: auto;
+  }
+
+}
