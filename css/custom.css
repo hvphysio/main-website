@@ -890,10 +890,8 @@ header.main-header .header-sticky.active {
 
 .hero-slider-layout .hero-slide {
   position: relative;
-  padding: 130px 0 180px;
-  height: 45vw;
+  padding: 0;
 }
-
 .hero.bg-image.hero-slider:before {
   display: none;
 }
@@ -927,8 +925,8 @@ header.main-header .header-sticky.active {
 
 .hero.hero-slider .hero-slider-layout .hero-slide .hero-slider-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 .hero.hero-slider .hero-slider-layout .hero-slide .hero-content {
