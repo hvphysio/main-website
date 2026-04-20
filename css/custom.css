@@ -5413,3 +5413,13 @@ header.main-header .header-sticky.active {
   }
 
 }
+@media (min-width: 992px) {
+  .hero.hero-slider .hero-content .hero-content-body {
+    margin-top: 30px;
+  }
+
+  .hero-slider-layout .hero-slide {
+    max-height: none;
+    overflow: visible;
+  }
+}
