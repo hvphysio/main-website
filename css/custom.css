@@ -5397,3 +5397,11 @@ header.main-header .header-sticky.active {
   }
 
 }
+@media (max-width: 768px) {
+
+  .hero-slider-image img {
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+}
