@@ -5463,3 +5463,23 @@ header.main-header .header-sticky.active {
   }
 
 }
+@media (max-width: 768px) {
+
+  .hero-slider-layout .hero-slide {
+    padding: 20px 0 !important;
+    height: auto !important;
+  }
+
+  .hero.hero-slider .hero-content {
+    padding: 0 !important;
+  }
+
+  .hero.hero-slider .hero-content-body {
+    margin-top: 10px !important;
+  }
+
+  .hero.hero-slider .hero-slider-image {
+    position: relative !important;
+  }
+
+}
