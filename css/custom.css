@@ -5483,3 +5483,16 @@ header.main-header .header-sticky.active {
   }
 
 }
+/* H1 Professional Size Fix */
+.text-anime-style-2 {
+  font-size: 42px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .text-anime-style-2 {
+    font-size: 28px;
+  }
+}
