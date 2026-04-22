@@ -5571,3 +5571,26 @@ header.main-header .header-sticky.active {
   object-fit: contain; /* no cropping */
   border-radius: 10px;
 }
+/* Blog layout fix */
+@media (min-width: 768px) {
+  .image-anime {
+    float: right;
+    width: 40%;
+    margin: 0 0 20px 20px;
+  }
+
+  .image-anime img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* Mobile reset */
+@media (max-width: 767px) {
+  .image-anime {
+    float: none;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+}
