@@ -5560,3 +5560,9 @@ header.main-header .header-sticky.active {
     margin: 8px 0;
   }
 }
+.blog-details-image img {
+  width: 100%;
+  max-height: 300px;   /* controls size */
+  object-fit: contain; /* prevents cropping */
+  border-radius: 10px;
+}
