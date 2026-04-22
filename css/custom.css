@@ -5560,9 +5560,14 @@ header.main-header .header-sticky.active {
     margin: 8px 0;
   }
 }
-.blog-details-image img {
+.image-anime {
+  max-width: 500px;   /* reduce size */
+  margin: 0 auto;     /* center image */
+}
+
+.image-anime img {
   width: 100%;
-  max-height: 300px;   /* controls size */
-  object-fit: contain; /* prevents cropping */
+  height: auto;
+  object-fit: contain; /* no cropping */
   border-radius: 10px;
 }
