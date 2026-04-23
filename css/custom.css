@@ -4079,14 +4079,13 @@ header.main-header .header-sticky.active {
     display: none;
   }
 
- .why-choose-image img {
+.why-choose-image img {
     width: 100%;
     height: 380px;
     object-fit: cover;
     border-radius: 30px;
     display: block;
 }
-
   .need-attention {
     padding: 50px 0;
   }
@@ -5596,16 +5595,5 @@ header.main-header .header-sticky.active {
     float: none;
     width: 100%;
     margin: 0 auto 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .why-choose-image {
-    width: 360px;
-  }
-
-  .why-choose-image img {
-    width: 100%;
-    height: auto;
-    display: block;
   }
 }
