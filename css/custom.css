@@ -5598,3 +5598,14 @@ header.main-header .header-sticky.active {
     margin: 0 auto 20px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .why-choose-image {
+    width: 360px;
+  }
+
+  .why-choose-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
