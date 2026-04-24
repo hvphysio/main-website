@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="post-featured-image" data-cursor-text="View">
                             <figure>
                                 <a href="/blog-details?b=${blog.slug_url}" class="image-anime">
-                                    <img src="https://blogbee.vercel.app${blog.cover_image_data}" alt="${blog.title}">
+                                  <img loading="lazy" src="https://blogbee.vercel.app${blog.cover_image_data}" alt="${blog.title} - Health Vision Physiotherapy Jayanagar Bangalore">
                                 </a>
                             </figure>
                         </div>
