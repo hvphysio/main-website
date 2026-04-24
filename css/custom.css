@@ -5563,37 +5563,22 @@ header.main-header .header-sticky.active {
     margin: 8px 0;
   }
 }
-.image-anime {
-  max-width: 500px;   /* reduce size */
-  margin: 0 auto;     /* center image */
+/* Single blog details image fix only */
+.page-single-post .post-image .image-anime {
+  max-width: 500px;
+  margin: 0 0 25px auto;
 }
 
-.image-anime img {
+.page-single-post .post-image .image-anime img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* no cropping */
+  object-fit: contain;
   border-radius: 10px;
 }
-/* Blog layout fix */
-@media (min-width: 768px) {
-  .image-anime {
-    float: right;
-    width: 40%;
-    margin: 0 0 20px 20px;
-  }
 
-  .image-anime img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-}
-
-/* Mobile reset */
 @media (max-width: 767px) {
-  .image-anime {
-    float: none;
-    width: 100%;
+  .page-single-post .post-image .image-anime {
+    max-width: 100%;
     margin: 0 auto 20px;
   }
 }
