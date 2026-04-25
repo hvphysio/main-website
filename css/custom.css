@@ -5584,10 +5584,8 @@ header.main-header .header-sticky.active {
 }
 /* FIX: Blog details text alignment */
 .page-single-post .post-content {
-  text-align: left !important;
-  max-width: 100% !important;
+  text-align: left;
 }
-
 /* Ensure paragraphs align properly */
 .page-single-post .post-content p {
   text-align: left !important;
