@@ -5602,17 +5602,4 @@ header.main-header .header-sticky.active {
 
 /* Keep blog details content full width */
 /* FIX: force blog content to start from left properly */
-.page-single-post .container {
-  max-width: 100% !important;
-}
 
-.page-single-post .row {
-  justify-content: flex-start !important;
-}
-
-.page-single-post .post-content {
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding-left: 0 !important;
-  text-align: left !important;
-}
