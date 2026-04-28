@@ -5563,82 +5563,25 @@ header.main-header .header-sticky.active {
     margin: 8px 0;
   }
 }
-/* FINAL FIX: Blog details image only */
-.page-single-post .post-image {
-  text-align: right;
-}
 
-.page-single-post .post-image figure.image-anime {
-  max-width: 480px;
-  margin: 0 0 30px auto;
-  display: block;
-}
-
-.page-single-post .post-image figure.image-anime img.post-cover-image {
-  width: 100% !important;
-  height: auto !important;
-  aspect-ratio: auto !important;
-  object-fit: contain !important;
-  border-radius: 12px;
-}
-
-/* Blog text stays left */
-.page-single-post .post-content,
-.page-single-post .post-entry,
-.page-single-post .paragraph1,
-.page-single-post .paragraph2 {
-  text-align: left !important;
-}
-
-/* Mobile: image full width */
-@media (max-width: 767px) {
+@media (min-width: 992px) {
   .page-single-post .post-image {
-    text-align: center;
+    float: right;
+    width: 38%;
+    margin-left: 35px;
+    margin-bottom: 20px;
   }
 
-  .page-single-post .post-image figure.image-anime {
-    max-width: 100%;
-    margin: 0 auto 25px;
-  }
-}
-/* FINAL: Blog image right, text normal full width */
-.page-single-post .post-image {
-  text-align: right;
-}
-
-.page-single-post .post-image .image-anime {
-  max-width: 500px;
-  margin: 0 0 25px auto;
-}
-
-.page-single-post .post-image .image-anime img.post-cover-image {
-  width: 100% !important;
-  height: auto !important;
-  object-fit: contain !important;
-  aspect-ratio: auto !important;
-  border-radius: 12px;
-}
-
-.page-single-post .post-content {
-  max-width: 1100px !important;
-  margin: 0 auto !important;
-  text-align: left !important;
-}
-
-.page-single-post .paragraph1,
-.page-single-post .paragraph2,
-.page-single-post .paragraph1 *,
-.page-single-post .paragraph2 * {
-  text-align: left !important;
-}
-
-@media (max-width: 767px) {
-  .page-single-post .post-image {
-    text-align: center;
+  .page-single-post .post-image figure,
+  .page-single-post .post-image img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
   }
 
-  .page-single-post .post-image .image-anime {
-    max-width: 100%;
-    margin: 0 auto 20px;
+  .page-single-post .post-content,
+  .page-single-post .post-entry {
+    text-align: left !important;
   }
 }
