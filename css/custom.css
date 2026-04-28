@@ -5564,24 +5564,23 @@ header.main-header .header-sticky.active {
   }
 }
 
+/* FINAL PERFECT BLOG LAYOUT */
 @media (min-width: 992px) {
   .page-single-post .post-image {
     float: right;
     width: 38%;
-    margin-left: 35px;
-    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 10px;   /* 👈 important fix */
   }
 
-  .page-single-post .post-image figure,
   .page-single-post .post-image img {
-    width: 100% !important;
-    height: auto !important;
-    aspect-ratio: auto !important;
-    object-fit: contain !important;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
   }
 
-  .page-single-post .post-content,
   .page-single-post .post-entry {
-    text-align: left !important;
+    text-align: left;
   }
 }
