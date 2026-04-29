@@ -15,7 +15,11 @@
 //   slug_url: "10-essential-benefits-of-regular-physiotherapy",
 //   cover_image_data: "/uploads/4_zd62bf2f2f8f2e3a59d3d0516_f115ac1de52466bab_d20241229_m215926_c003_v0312018_t0016_u01735509566714.jpg"
 // };
-
+function decodeHtml(html) {
+  const textarea = document.createElement("textarea");
+  textarea.innerHTML = html;
+  return textarea.value;
+}
 function getSlugFromUrl() {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get("b");
@@ -37,8 +41,8 @@ console.log("paragraph2 exact:", blogData.paragraph2);
       document.querySelector(".post-title").textContent = blogData.title;
 
       // Set the paragraphs
-      document.querySelector(".paragraph1").innerHTML = blogData.paragraph1.replace(/<span[^>]*>|<\/span>/g, '');
-     document.querySelector(".paragraph2").innerHTML = blogData.paragraph2.replace(/<span[^>]*>|<\/span>/g, '');
+      document.querySelector(".paragraph1").innerHTML = decodeHtml(blogData.paragraph1).replace(/<span[^>]*>|<\/span>/g, '');
+document.querySelector(".paragraph2").innerHTML = decodeHtml(blogData.paragraph2).replace(/<span[^>]*>|<\/span>/g, '');
       if(blogData.quotation){
         document.querySelector(".blockquote").style = 'display:block;';
         document.querySelector(".blockquote p").textContent = blogData.quotation;
