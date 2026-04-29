@@ -5584,3 +5584,9 @@ header.main-header .header-sticky.active {
     text-align: left;
   }
 }
+/* Clear blog floated image before footer */
+.page-single-post .post-entry::after {
+  content: "";
+  display: block;
+  clear: both;
+}
