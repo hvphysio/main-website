@@ -5584,9 +5584,40 @@ header.main-header .header-sticky.active {
     text-align: left;
   }
 }
-/* Clear blog floated image before footer */
-.page-single-post .post-entry::after {
-  content: "";
-  display: block;
-  clear: both;
+/* FINAL BLOG LAYOUT WITHOUT FOOTER ISSUE */
+@media (min-width: 992px) {
+  .page-single-post .col-lg-12 {
+    display: grid;
+    grid-template-columns: 1fr 38%;
+    column-gap: 35px;
+    align-items: start;
+  }
+
+  .page-single-post .post-content {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100% !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .page-single-post .post-image {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 10px 0 25px 0 !important;
+  }
+
+  .page-single-post .post-image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    aspect-ratio: auto !important;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-single-post .col-lg-12 {
+    display: block;
+  }
 }
