@@ -5563,3 +5563,24 @@ header.main-header .header-sticky.active {
     margin: 8px 0;
   }
 }
+/* Blog details side image */
+.blog-detail-side-image {
+  max-width: 520px;
+  margin-left: auto;
+}
+
+.blog-detail-side-image figure,
+.blog-detail-side-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+@media (max-width: 991px) {
+  .blog-detail-side-image {
+    max-width: 100%;
+    margin: 0 auto 25px;
+  }
+}
