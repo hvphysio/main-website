@@ -5568,7 +5568,7 @@ header.main-header .header-sticky.active {
 @media (min-width: 992px) {
   .page-single-post .col-lg-12 {
     display: grid;
-    grid-template-columns: 1fr 38%;
+   grid-template-columns: 58% 42%;
     column-gap: 35px;
     align-items: start;
   }
