@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".post-title").textContent = blogData.title;
 
       // Set the paragraphs
-      document.querySelector(".paragraph1").innerHTML = blogData.paragraph1;
-      document.querySelector(".paragraph2").innerHTML = blogData.paragraph2;
+      document.querySelector(".paragraph1").innerHTML = blogData.paragraph1.replace(/<span[^>]*>|<\/span>/g, '');
+     document.querySelector(".paragraph2").innerHTML = blogData.paragraph2.replace(/<span[^>]*>|<\/span>/g, '');
       if(blogData.quotation){
         document.querySelector(".blockquote").style = 'display:block;';
         document.querySelector(".blockquote p").textContent = blogData.quotation;
