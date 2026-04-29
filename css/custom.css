@@ -5584,3 +5584,12 @@ header.main-header .header-sticky.active {
     margin: 0 auto 25px;
   }
 }
+/* Blog links styling */
+.page-single-post .post-entry a {
+  color: #007bff !important;
+  text-decoration: underline;
+}
+
+.page-single-post .post-entry a:hover {
+  color: #0056b3 !important;
+}
