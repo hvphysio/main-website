@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(`${apiUrl}`)
     .then((response) => response.json())
     .then((blogData) => {
-      console.log("response --- details", blogData)  
+     console.log("response --- details", blogData);
+console.log("paragraph1 exact:", blogData.paragraph1);
+console.log("paragraph2 exact:", blogData.paragraph2);
       // Set the title
       document.querySelector(".post-title").textContent = blogData.title;
 
