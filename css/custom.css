@@ -5593,15 +5593,22 @@ header.main-header .header-sticky.active {
 .page-single-post .post-entry a:hover {
   color: #0056b3 !important;
 }
-/* Fix floating WhatsApp and appointment overlap */
+/* Mobile floating buttons spacing fix */
 .float-whatsapp {
-  bottom: 105px !important;
-  right: 40px !important;
+  width: 58px !important;
+  height: 58px !important;
+  bottom: 120px !important;
+  right: 28px !important;
   z-index: 9999 !important;
 }
 
+.float-whatsapp .my-float {
+  font-size: 36px !important;
+  margin-top: 11px !important;
+}
+
 .appointment-float-btn {
-  bottom: 25px !important;
-  right: 40px !important;
+  bottom: 35px !important;
+  right: 28px !important;
   z-index: 9998 !important;
 }
