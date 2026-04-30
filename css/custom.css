@@ -5593,11 +5593,15 @@ header.main-header .header-sticky.active {
 .page-single-post .post-entry a:hover {
   color: #0056b3 !important;
 }
-/* Fix overlap between WhatsApp and Appointment button */
-.whatsapp-btn {
-  bottom: 90px !important;
+/* Fix floating WhatsApp and appointment overlap */
+.float-whatsapp {
+  bottom: 105px !important;
+  right: 40px !important;
+  z-index: 9999 !important;
 }
 
 .appointment-float-btn {
-  bottom: 20px !important;
+  bottom: 25px !important;
+  right: 40px !important;
+  z-index: 9998 !important;
 }
