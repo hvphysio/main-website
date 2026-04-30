@@ -35,11 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((blogData) => {
      console.log("response --- details", blogData);
-console.log("paragraph1 exact:", blogData.paragraph1);
-console.log("paragraph2 exact:", blogData.paragraph2);
       // Set the title
       document.querySelector(".post-title").textContent = blogData.title;
+document.title = blogData.title + " | Physiotherapy in Bangalore";
 
+document.querySelector('meta[name="description"]').setAttribute(
+  "content",
+  decodeHtml(blogData.paragraph1).replace(/<[^>]*>/g, "").substring(0, 155)
+);
       // Set the paragraphs
       document.querySelector(".paragraph1").innerHTML = decodeHtml(blogData.paragraph1).replace(/<span[^>]*>|<\/span>/g, '');
 document.querySelector(".paragraph2").innerHTML = decodeHtml(blogData.paragraph2).replace(/<span[^>]*>|<\/span>/g, '');
