@@ -436,10 +436,10 @@ body {
 
 .float-whatsapp{
 	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
+	width:48px;
+	height:48px;
+	bottom:80px;
+	right:25px;
 	background-color: var(--accent-color);
 	color:#FFF;
 	border-radius:50px;
@@ -448,8 +448,8 @@ body {
   z-index: 999;
 }
 .float-whatsapp .my-float{
-   margin-top: 9px;
-   font-size: 43px;
+   margin-top: 10px;
+   font-size: 28px;
 }
 
 .header-btn-1{
@@ -5314,8 +5314,8 @@ header.main-header .header-sticky.active {
 }
 .appointment-float-btn {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 25px;
+  bottom: 25px;
   z-index: 9999;
   display: inline-flex;
   align-items: center;
