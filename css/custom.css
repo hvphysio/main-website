@@ -5593,3 +5593,11 @@ header.main-header .header-sticky.active {
 .page-single-post .post-entry a:hover {
   color: #0056b3 !important;
 }
+/* Fix overlap between WhatsApp and Appointment button */
+.whatsapp-btn {
+  bottom: 90px !important;
+}
+
+.appointment-float-btn {
+  bottom: 20px !important;
+}
