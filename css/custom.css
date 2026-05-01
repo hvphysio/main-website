@@ -5625,3 +5625,31 @@ header.main-header .header-sticky.active {
 .float-whatsapp .fa-whatsapp {
   font-size: 24px !important;
 }
+/* Mobile compact service cards */
+@media (max-width: 767px) {
+  .page-services .service-item {
+    padding: 18px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+
+  .page-services .service-item .service-body p {
+    display: none;
+  }
+
+  .page-services .service-item .service-body {
+    margin-bottom: 10px;
+  }
+
+  .page-services .service-item .service-body h3 {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin-bottom: 0;
+  }
+
+  .page-services .service-item .icon-box {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 12px;
+  }
+}
