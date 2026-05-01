@@ -435,23 +435,22 @@ body {
 
 
 .float-whatsapp{
-	position:fixed;
-	width:48px;
-	height:48px;
-	bottom:80px;
-	right:25px;
-	background-color: var(--accent-color);
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-  z-index: 999;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 85px;
+  right: 20px;
+  background-color: var(--accent-color);
+  color:#FFF;
+  border-radius: 50%;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 9999;
 }
 .float-whatsapp .my-float{
-   margin-top: 10px;
-   font-size: 28px;
+  margin-top: 8px;
+  font-size: 26px;
 }
-
 .header-btn-1{
   background-color: var(--accent-color);
   border-radius: 50px;
@@ -5611,4 +5610,10 @@ header.main-header .header-sticky.active {
   bottom: 35px !important;
   right: 28px !important;
   z-index: 9998 !important;
+}
+.appointment-float-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9998;
 }
