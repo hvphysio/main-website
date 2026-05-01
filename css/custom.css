@@ -5756,3 +5756,20 @@ header.main-header .header-sticky.active {
     grid-template-columns: 1fr !important;
   }
 }
+/* Final condition link professional styling */
+.conditions-section .condition-group a {
+  color: #153c33 !important;
+  text-decoration: none !important;
+  background: #ffffff !important;
+  border-radius: 10px !important;
+  padding: 8px 12px !important;
+  margin-bottom: 10px !important;
+  display: block !important;
+  font-weight: 500 !important;
+}
+
+.conditions-section .condition-group a:hover {
+  color: #ffffff !important;
+  background: #619e90 !important;
+  text-decoration: none !important;
+}
