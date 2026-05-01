@@ -5773,3 +5773,11 @@ header.main-header .header-sticky.active {
   background: #619e90 !important;
   text-decoration: none !important;
 }
+/* Fix spacing after removing service card */
+.page-services {
+  padding-bottom: 20px !important;
+}
+
+.conditions-section {
+  margin-top: -40px !important;
+}
