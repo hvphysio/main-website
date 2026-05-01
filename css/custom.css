@@ -5700,3 +5700,59 @@ header.main-header .header-sticky.active {
     grid-template-columns: 1fr;
   }
 }
+/* FINAL Orthopedic Conditions Professional Grid */
+.conditions-section {
+  padding: 60px 0 !important;
+  background: #ffffff !important;
+}
+
+.conditions-section h2 {
+  text-align: center !important;
+  margin-bottom: 35px !important;
+  font-size: 36px !important;
+}
+
+.conditions-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 22px !important;
+}
+
+.condition-group {
+  background: #e6efed !important;
+  border-radius: 18px !important;
+  padding: 22px !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06) !important;
+}
+
+.condition-group h4 {
+  font-size: 20px !important;
+  margin-bottom: 16px !important;
+  color: #153c33 !important;
+}
+
+.condition-group a {
+  display: block !important;
+  color: #153c33 !important;
+  text-decoration: none !important;
+  margin-bottom: 10px !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.condition-group a:hover {
+  color: #007bff !important;
+  text-decoration: underline !important;
+}
+
+@media (max-width: 991px) {
+  .conditions-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .conditions-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
