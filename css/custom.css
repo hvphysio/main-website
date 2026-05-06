@@ -5808,3 +5808,8 @@ h3 {
   font-size: 24px !important;
   line-height: 1.5;
 }
+/* Remove CTA Infobar Globally */
+
+.cta-infobar {
+  display: none !important;
+}
