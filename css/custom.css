@@ -5936,3 +5936,35 @@ h3 {
   }
 
 }
+/* FINAL FIX: dark green section heading visibility */
+.why-choose-us .why-choose-box-2 .why-choose-content h3,
+.why-choose-us .why-choose-box-2 .why-choose-content p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Keep left side readable */
+.why-choose-us .why-choose-box-1 .why-choose-content h3 {
+  color: #222222 !important;
+  opacity: 1 !important;
+}
+
+.why-choose-us .why-choose-box-1 .why-choose-content p {
+  color: #4f6f68 !important;
+  opacity: 1 !important;
+}
+
+/* Reduce oversized why-choose heading text */
+.why-choose-us .why-choose-content h3 {
+  font-size: 24px !important;
+  line-height: 1.35 !important;
+  font-weight: 700 !important;
+}
+
+/* Mobile fix */
+@media only screen and (max-width: 767px) {
+  .why-choose-us .why-choose-content h3 {
+    font-size: 22px !important;
+    line-height: 1.35 !important;
+  }
+}
