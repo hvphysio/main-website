@@ -5821,3 +5821,45 @@ h3 {
   margin-bottom: 18px;
   text-align: left;
 }
+/* Fix dim headings and improve readability */
+.need-attention .section-title h2,
+.home-contact-us .home-contact-content h3,
+.need-attention .section-title h3 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Improve paragraph visibility */
+.need-attention .section-title p,
+.home-contact-us .home-contact-content p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Reduce oversized heading text for professional look */
+.need-attention .section-title h2,
+.solution-plan-content .section-title h2,
+.about-content .section-title h2,
+.our-service .section-title h2,
+.why-choose-us .section-title h2,
+.our-team .section-title h2,
+.our-blog .section-title h2 {
+  font-size: 48px !important;
+  line-height: 1.2 !important;
+}
+
+/* Mobile heading optimization */
+@media only screen and (max-width: 767px) {
+
+  .need-attention .section-title h2,
+  .solution-plan-content .section-title h2,
+  .about-content .section-title h2,
+  .our-service .section-title h2,
+  .why-choose-us .section-title h2,
+  .our-team .section-title h2,
+  .our-blog .section-title h2 {
+    font-size: 32px !important;
+    line-height: 1.3 !important;
+  }
+
+}
