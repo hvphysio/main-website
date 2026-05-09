@@ -6006,3 +6006,59 @@ h3 {
   line-height: 1.3 !important;
   font-weight: 700 !important;
 }
+/* ===== FOOTER PROFESSIONAL LAYOUT FIX ===== */
+
+/* Reduce oversized footer spacing */
+.main-footer {
+  padding: 70px 0 40px !important;
+}
+
+/* Footer row alignment */
+.main-footer .row {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+}
+
+/* Equal column spacing */
+.footer-logo,
+.about-working-hour,
+.footer-contact {
+  margin-bottom: 0 !important;
+}
+
+/* Reduce paragraph width */
+.footer-logo-content p {
+  max-width: 320px !important;
+  line-height: 1.7 !important;
+}
+
+/* Working hours spacing */
+.about-working-hour {
+  padding-top: 10px !important;
+}
+
+/* Contact spacing */
+.footer-contact {
+  padding-top: 10px !important;
+}
+
+/* Reduce huge footer height on mobile */
+@media only screen and (max-width: 767px) {
+
+  .main-footer {
+    padding: 50px 0 20px !important;
+  }
+
+  .footer-logo,
+  .about-working-hour,
+  .footer-contact {
+    margin-bottom: 35px !important;
+    text-align: center !important;
+  }
+
+  .footer-logo-content p {
+    max-width: 100% !important;
+  }
+
+}
