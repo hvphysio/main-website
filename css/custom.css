@@ -6101,3 +6101,8 @@ h3 {
   }
 
 }
+/* Working hours single line */
+.about-working-hour ul li,
+.about-working-hour p {
+  white-space: nowrap !important;
+}
