@@ -6062,3 +6062,21 @@ h3 {
   }
 
 }
+/* About page dark counter section visibility */
+.company-counter,
+.company-counter * {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.company-counter h3,
+.company-counter .counter {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+
+.company-counter p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
