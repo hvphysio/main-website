@@ -5991,3 +5991,10 @@ h3 {
   color: #ffffff !important;
   opacity: 1 !important;
 }
+/* Final footer heading fix */
+.footer-working-hours h3,
+.footer-working-hours-title,
+.working-hours h3 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
