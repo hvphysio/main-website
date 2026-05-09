@@ -5968,3 +5968,26 @@ h3 {
     line-height: 1.35 !important;
   }
 }
+/* Footer heading visibility fix */
+.footer-links h3,
+.footer-contact h3,
+.footer-working-hour h3,
+.footer-logo h3,
+.footer-contact-details h3 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-size: 28px !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+}
+
+/* Footer paragraph readability */
+.footer-links p,
+.footer-contact p,
+.footer-working-hour p,
+.footer-contact-details p,
+.footer-contact-details li,
+.footer-contact-details a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
