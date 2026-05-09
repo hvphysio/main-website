@@ -6080,3 +6080,24 @@ h3 {
   color: #ffffff !important;
   opacity: 1 !important;
 }
+/* Topbar single-line layout */
+.topbar-contact-info ul {
+  display: flex !important;
+  align-items: center !important;
+  gap: 30px !important;
+  flex-wrap: nowrap !important;
+}
+
+.topbar-contact-info ul li {
+  white-space: nowrap !important;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 991px) {
+  
+  .topbar-contact-info ul {
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+  }
+
+}
