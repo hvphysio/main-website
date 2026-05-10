@@ -6137,3 +6137,59 @@ h3 {
 .footer-copyright {
   padding: 15px 0 !important;
 }
+/* ===== PROFESSIONAL FOOTER RESTRUCTURE ===== */
+
+.main-footer {
+  padding: 55px 0 20px !important;
+}
+
+/* Footer row alignment */
+.main-footer .row {
+  align-items: flex-start !important;
+}
+
+/* Reduce excessive spacing */
+.footer-logo,
+.about-working-hour,
+.footer-contact {
+  margin-bottom: 20px !important;
+}
+
+/* Better text width */
+.footer-logo-content p {
+  max-width: 320px !important;
+  line-height: 1.7 !important;
+}
+
+/* Footer headings */
+.about-working-hour h3,
+.footer-contact h3 {
+  margin-bottom: 20px !important;
+  font-size: 24px !important;
+}
+
+/* Contact spacing */
+.footer-contact-details .footer-info-box {
+  margin-bottom: 18px !important;
+}
+
+/* Reduce huge empty bottom */
+.footer-copyright {
+  padding: 12px 0 !important;
+}
+
+/* Mobile footer optimization */
+@media only screen and (max-width: 767px) {
+
+  .main-footer {
+    padding: 45px 0 15px !important;
+  }
+
+  .footer-logo,
+  .about-working-hour,
+  .footer-contact {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+  }
+
+}
