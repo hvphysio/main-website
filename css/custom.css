@@ -6282,3 +6282,45 @@ h3 {
   }
 
 }
+/* Exact footer column width balancing */
+.main-footer .row {
+  display: grid !important;
+  grid-template-columns: 35% 30% 35% !important;
+  align-items: flex-start !important;
+}
+
+.main-footer .row > div {
+  max-width: 100% !important;
+  flex: none !important;
+}
+
+.footer-links {
+  text-align: center !important;
+  padding-left: 0 !important;
+}
+
+.footer-links h3,
+.footer-links ul,
+.footer-links li {
+  text-align: center !important;
+}
+
+.footer-contact {
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+/* Mobile reset */
+@media only screen and (max-width: 991px) {
+  .main-footer .row {
+    display: block !important;
+  }
+
+  .footer-links,
+  .footer-links h3,
+  .footer-links ul,
+  .footer-links li,
+  .footer-contact {
+    text-align: center !important;
+  }
+}
