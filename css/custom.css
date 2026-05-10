@@ -6106,3 +6106,34 @@ h3 {
 .about-working-hour p {
   white-space: nowrap !important;
 }
+/* Footer professional restructuring */
+.main-footer {
+  padding: 50px 0 25px !important;
+}
+
+.main-footer .row {
+  align-items: flex-start !important;
+}
+
+.about-footer-content p {
+  max-width: 330px !important;
+  line-height: 1.6 !important;
+}
+
+.about-working-hour,
+.footer-contact {
+  padding-top: 0 !important;
+}
+
+.about-working-hour h3,
+.footer-contact h3 {
+  margin-bottom: 25px !important;
+}
+
+.footer-contact-details .footer-info-box {
+  margin-bottom: 22px !important;
+}
+
+.footer-copyright {
+  padding: 15px 0 !important;
+}
