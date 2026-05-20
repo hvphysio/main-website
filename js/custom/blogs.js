@@ -109,11 +109,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    blogContainer.innerHTML = `<p>Loading blogs...</p>`;
+    blogContainer.innerHTML = `
+<div class="text-center" style="padding:40px;">
+  <div class="spinner-border text-primary"></div>
+  <p style="margin-top:15px;">Loading blogs...</p>
+</div>
+`;
 
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 6000);
+      const timeout = setTimeout(() => controller.abort(), 15000);
 
       const response = await fetch(`${apiUrl}?page=${page}`, {
         signal: controller.signal
