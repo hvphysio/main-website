@@ -6368,3 +6368,33 @@ h3 {
 }
 
 }
+.blog-book-btn{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background: #1565ff;
+    color: #fff !important;
+    padding: 14px 26px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    z-index: 99999;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.blog-book-btn:hover{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px){
+
+.blog-book-btn{
+    left: 15px;
+    bottom: 15px;
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+}
