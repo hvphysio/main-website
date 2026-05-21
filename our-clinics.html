@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Clinics | Health Vision Physiotherapy and Rehabilitation</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+<section class="team-page" style="padding:80px 0;">
+
+    <div class="container">
+
+        <div class="section-title text-center" style="margin-bottom:60px;">
+
+            <h1>Our Clinics</h1>
+
+            <p>
+                Explore our advanced physiotherapy and rehabilitation centers across Bangalore.
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <!-- Jayanagar Clinic -->
+            <div class="col-lg-6 col-md-6">
+
+                <div class="doctor-card">
+
+                    <div class="doctor-image">
+                        <img src="images/about-img.jpg" alt="Jayanagar Clinic" class="doctor-img">
+                    </div>
+
+                    <div class="doctor-content">
+
+                        <h3>Jayanagar Clinic</h3>
+
+                        <h5>Jayanagar 9th Block, Bangalore</h5>
+
+                        <p>
+                            Advanced physiotherapy center specialized in orthopedic rehabilitation, neurological rehabilitation, sports physiotherapy and post operative rehabilitation.
+                        </p>
+
+                        <div class="doctor-more-text" style="display:none;">
+
+                            <p>
+                                Our Jayanagar clinic provides expert treatment for back pain, neck pain, knee pain, shoulder pain, sciatica, stroke rehabilitation, slip disc and sports injuries with advanced physiotherapy techniques.
+                            </p>
+
+                        </div>
+
+                        <button class="read-more-btn" onclick="toggleDoctorReadMore(this)">
+                            Read More
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Banashankari Clinic -->
+            <div class="col-lg-6 col-md-6">
+
+                <div class="doctor-card">
+
+                    <div class="doctor-image">
+                        <img src="images/about-img.jpg" alt="Banashankari Clinic" class="doctor-img">
+                    </div>
+
+                    <div class="doctor-content">
+
+                        <h3>Banashankari Clinic</h3>
+
+                        <h5>Banashankari, Bangalore</h5>
+
+                        <p>
+                            Professional physiotherapy and rehabilitation clinic focused on pain relief, mobility restoration and long term recovery.
+                        </p>
+
+                        <div class="doctor-more-text" style="display:none;">
+
+                            <p>
+                                Our Banashankari clinic offers specialized physiotherapy for orthopedic conditions, neurological rehabilitation, sports injuries and post operative physiotherapy.
+                            </p>
+
+                        </div>
+
+                        <button class="read-more-btn" onclick="toggleDoctorReadMore(this)">
+                            Read More
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+function toggleDoctorReadMore(button){
+
+    const moreText = button.previousElementSibling;
+
+    if(moreText.style.display === "none"){
+        moreText.style.display = "block";
+        button.innerText = "Read Less";
+    }else{
+        moreText.style.display = "none";
+        button.innerText = "Read More";
+    }
+}
+</script>
+
+</body>
+</html>
