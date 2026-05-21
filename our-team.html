@@ -13,19 +13,75 @@
 
 <body>
 
-    <div class="container" style="padding:80px 20px;">
+<section class="team-page" style="padding:80px 0;">
+    <div class="container">
 
-        <h1>Our Team</h1>
+        <div class="section-title text-center" style="margin-bottom:50px;">
+            <h1>Our Team</h1>
+            <p>
+                Meet our experienced physiotherapy professionals dedicated to advanced rehabilitation and patient care.
+            </p>
+        </div>
 
-        <p>
-            Health Vision Physiotherapy and Rehabilitation has an experienced team of physiotherapists dedicated to orthopedic rehabilitation, neurological rehabilitation, sports physiotherapy, post operative rehabilitation, and home physiotherapy services in Bangalore.
-        </p>
+        <div class="row">
 
-        <p>
-            Our expert physiotherapists provide advanced treatment for back pain, neck pain, knee pain, shoulder pain, sciatica, stroke rehabilitation, slip disc, sports injuries, and post surgical rehabilitation across Jayanagar, BTM Layout, JP Nagar, Koramangala, and surrounding areas.
-        </p>
+            <!-- Doctor Card Start -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="doctor-card">
+
+                    <div class="doctor-image">
+                        <img src="images/about-doctor-img.jpg" alt="Dr Zahoor Mir">
+                    </div>
+
+                    <div class="doctor-content">
+
+                        <h3>Dr. Zahoor Mir</h3>
+
+                        <h5>BPTh, MPT Orthopedics</h5>
+
+                        <p>
+                            Senior Physiotherapist and Rehabilitation Expert specialized in orthopedic physiotherapy, neurological rehabilitation, sports injury rehabilitation and post operative physiotherapy.
+                        </p>
+
+                        <div class="doctor-more-text" style="display:none;">
+
+                            <p>
+                                Dr. Zahoor Mir has extensive experience in treating back pain, neck pain, knee pain, shoulder pain, sciatica, stroke rehabilitation and sports injuries using evidence based physiotherapy techniques.
+                            </p>
+
+                        </div>
+
+                        <button class="read-more-btn" onclick="toggleDoctorReadMore(this)">
+                            Read More
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Doctor Card End -->
+
+        </div>
 
     </div>
+</section>
+
+<script>
+function toggleDoctorReadMore(button){
+
+    const moreText = button.previousElementSibling;
+
+    if(moreText.style.display === "none"){
+        moreText.style.display = "block";
+        button.innerText = "Read Less";
+    }else{
+        moreText.style.display = "none";
+        button.innerText = "Read More";
+    }
+}
+</script>
 
 </body>
 </html>
