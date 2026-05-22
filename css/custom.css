@@ -6521,39 +6521,21 @@ h3 {
 .read-more-btn:hover{
     background:#083c94;
 }
-/* Sticky Buttons */
-
-.sticky-appointment-btn{
-    position:fixed;
-    left:20px;
-    bottom:20px;
-    background:#0d6efd;
-    color:#fff;
-    padding:14px 22px;
-    border-radius:50px;
-    font-size:15px;
-    font-weight:600;
-    z-index:99999;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
-    transition:0.3s;
-    text-decoration:none;
-}
-
-.sticky-appointment-btn:hover{
-    background:#083c94;
-    color:#fff;
-}
+/* Sticky WhatsApp Icon */
 
 .sticky-whatsapp-btn{
     position:fixed;
     right:20px;
     bottom:20px;
+    width:65px;
+    height:65px;
     background:#25D366;
     color:#fff;
-    padding:14px 24px;
-    border-radius:50px;
-    font-size:15px;
-    font-weight:600;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
     z-index:99999;
     box-shadow:0 5px 20px rgba(0,0,0,0.2);
     transition:0.3s;
@@ -6563,4 +6545,5 @@ h3 {
 .sticky-whatsapp-btn:hover{
     background:#128C7E;
     color:#fff;
+    transform:scale(1.08);
 }
