@@ -6572,3 +6572,27 @@ h3 {
     color:#fff !important;
     transform:scale(1.03);
 }
+/* Mobile Dropdown Fix */
+
+@media only screen and (max-width: 991px){
+
+    .navbar-collapse{
+        overflow: visible !important;
+        max-height: none !important;
+    }
+
+    .submenu{
+        display:block !important;
+        position:relative !important;
+        width:100%;
+        box-shadow:none !important;
+        opacity:1 !important;
+        visibility:visible !important;
+    }
+
+    .submenu li a{
+        padding-left:35px !important;
+        background:#f8f8f8;
+    }
+
+}
